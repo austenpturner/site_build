@@ -4,40 +4,53 @@ import React from "react"
 
 import "./header_styles.css"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div>
-      <h1>
-        <Link to="/">
-          inscope.ai
-        </Link>
-      </h1>
-      <nav>
-        <ul>
-          <li>
+function Header() {
+  const [navOpen, setNavOpen] = React.useState(false);
+
+  function handleNavSlide() {
+    setNavOpen(!navOpen);
+  };
+
+    return (
+      <header>
+        <div>
+          <h1>
             <Link to="/">
-              Home
-            </Link></li>
-          <li>
-            <Link to="/page-2">
-              Company
+              inscope.ai
             </Link>
-          </li>
-          <li>
-            <Link to="/page-2">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/page-2">
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-)
+          </h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">
+                  Home
+                </Link></li>
+              <li>
+                <Link to="/page-2">
+                  Company
+                </Link>
+              </li>
+              <li>
+                <Link to="/page-2">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/page-2">
+                  Blog
+                </Link>
+              </li>
+            </ul>
+            <div id="burger" onClick={handleNavSlide}>
+              <div className={navOpen ? "line toggle1" : "line"} id="line1"></div>
+              <div className={navOpen ? "line toggle2" : "line"} id="line2"></div>
+              <div className={navOpen ? "line toggle3" : "line"} id="line3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    )
+  }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
