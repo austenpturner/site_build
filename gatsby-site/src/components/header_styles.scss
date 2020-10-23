@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
-header {
-    background: rebeccapurple;
-    font-family: lato, sans-serif;
-    margin-bottom: 1.45rem;
-    max-width: 960;
-    padding: 1.45rem 1.0875rem;
-    div {
+div {
+    header {
         align-items: center;
+        background: rebeccapurple;
         display: flex;
+        font-family: lato, sans-serif;
         flex-direction: row;
+        height: 90px;
         justify-content: space-between;
+        margin-bottom: 1.45rem;
+        max-width: 960;
+        padding: 1.45rem 1.0875rem;
+        // position: fixed;
+        position: relative;
         margin: 0 auto;
-        
+        width: 100%;
+        z-index: 2;
         h1 {
             margin: 0;
             a {
@@ -28,12 +32,11 @@ header {
                 cursor: pointer;
                 margin: 2px;
                 padding: 5px;
-                // z-index: 2;
                 .line {
                     background: white;
                     height: 3px;
                     margin: 4px;
-                    transition: all 500ms ease-in-out;
+                    transition: all 600ms ease-in-out;
                     width: 40px;
                 }
                 -webkit-tap-highlight-color: transparent;
@@ -68,11 +71,48 @@ header {
             }
         }
     }
+    #navSlider {
+        background: rebeccapurple;
+        margin: auto;
+        position: absolute;
+        transition: top 800ms ease-in-out;
+        width: 100%;
+        z-index: 1;
+        ul {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 40vh;
+            list-style: none;
+            margin: 0;
+            li {
+                margin: 15px;
+                a {
+                    border-bottom: solid 2px rgba(255, 255, 255, 0);
+                    color: white;
+                    margin: 10px;
+                    padding-bottom: 2px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    &:hover {
+                        border-bottom: solid 2px rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+    .slide-up {
+        top: -100vh;
+    }
+    .slide-down {
+        top: 90px;
+    }
 }
 
 @media (min-width: 768px) {
-    header {
-        div {
+    div {
+        header {
             nav {
                 #burger {
                     display: none;

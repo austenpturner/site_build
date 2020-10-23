@@ -1,39 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-header {
-  background: rebeccapurple;
-  font-family: lato, sans-serif;
-  margin-bottom: 1.45rem;
-  max-width: 960;
-  padding: 1.45rem 1.0875rem;
-}
-
-header div {
+div header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: rebeccapurple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: lato, sans-serif;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 90px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 1.45rem;
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+  position: relative;
   margin: 0 auto;
+  width: 100%;
+  z-index: 2;
 }
 
-header div h1 {
+div header h1 {
   margin: 0;
 }
 
-header div h1 a {
+div header h1 a {
   color: white;
   text-decoration: none;
 }
 
-header div nav #burger {
+div header nav #burger {
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -49,40 +50,40 @@ header div nav #burger {
   -webkit-tap-highlight-color: transparent;
 }
 
-header div nav #burger .line {
+div header nav #burger .line {
   background: white;
   height: 3px;
   margin: 4px;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
   width: 40px;
 }
 
-header div nav .toggle1 {
+div header nav .toggle1 {
   -webkit-transform: rotate(-45deg) translate(-5px, 11px);
           transform: rotate(-45deg) translate(-5px, 11px);
 }
 
-header div nav .toggle2 {
+div header nav .toggle2 {
   opacity: 0;
 }
 
-header div nav .toggle3 {
+div header nav .toggle3 {
   -webkit-transform: rotate(45deg) translate(-5px, -11px);
           transform: rotate(45deg) translate(-5px, -11px);
 }
 
-header div nav ul {
+div header nav ul {
   display: none;
   list-style: none;
   margin: auto;
 }
 
-header div nav ul li {
+div header nav ul li {
   margin: auto;
 }
 
-header div nav ul li a {
+div header nav ul li a {
   border-bottom: solid 2px rgba(255, 255, 255, 0);
   color: white;
   margin: 10px;
@@ -91,15 +92,69 @@ header div nav ul li a {
   text-transform: uppercase;
 }
 
-header div nav ul li a:hover {
+div header nav ul li a:hover {
   border-bottom: solid 2px white;
 }
 
+div #navSlider {
+  background: rebeccapurple;
+  margin: auto;
+  position: absolute;
+  -webkit-transition: top 800ms ease-in-out;
+  transition: top 800ms ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+div #navSlider ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+  list-style: none;
+  margin: 0;
+}
+
+div #navSlider ul li {
+  margin: 15px;
+}
+
+div #navSlider ul li a {
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  color: white;
+  margin: 10px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+div #navSlider ul li a:hover {
+  border-bottom: solid 2px white;
+}
+
+div .slide-up {
+  top: -100vh;
+}
+
+div .slide-down {
+  top: 90px;
+}
+
 @media (min-width: 768px) {
-  header div nav #burger {
+  div header nav #burger {
     display: none;
   }
-  header div nav ul {
+  div header nav ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
