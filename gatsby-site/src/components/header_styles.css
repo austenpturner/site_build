@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+header {
+  background: rebeccapurple;
+  font-family: lato, sans-serif;
+  margin-bottom: 1.45rem;
+}
+
+header div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+}
+
+header div h1 {
+  margin: 0;
+}
+
+header div h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header div nav ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+header div nav ul li {
+  margin: auto;
+}
+
+header div nav ul li a {
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  color: white;
+  margin: 10px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header div nav ul li a:hover {
+  border-bottom: solid 2px white;
+}
+/*# sourceMappingURL=header_styles.css.map */
