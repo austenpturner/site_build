@@ -1,0 +1,64 @@
+// ----- IMPORTED FONTS ----- //
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+// ----- SASS VARIABLES ----- //
+$mediumGrey: rgb(130, 130, 130);
+$darkGrey: rgb(90, 90, 90);
+$inscopeBlue: #4e67a7;
+
+// ----- SASS MIXINS ----- //
+@mixin flex ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+// ----- CSS RESET ----- //
+* {
+    box-sizing: border-box;
+    margin: 0;
+    // overflow-y: scroll;
+    padding: 0;
+    position: relative;
+    text-size-adjust: 100%;
+}
+
+// ----- PAGE STYLES ----- //
+body {
+    font-family: lato, sans-serif;
+}
+
+// ----- COMPONENT STYLES ----- //
+@import "./headerStyles";
+
+// ----- ELEMENT STYLES ----- //
+div {
+    main {
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            color: $inscopeBlue; 
+        }
+    }
+    
+    footer {
+        background: $inscopeBlue;
+        bottom: 0;
+        margin-top: 2rem;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        p {
+            margin: 10px auto;
+            text-align: center;
+        }
+    }
+}
+
+// ----- MEDIA QUERIES ----- //
+@media only screen and (max-width: 480px) {
+    html {
+      font-size: 100%;
+    }
+}

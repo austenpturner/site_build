@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
-
 div {
     header {
+        @include flex(row, space-between);
         align-items: center;
-        background: rebeccapurple;
-        display: flex;
+        background: $mediumGrey;
         font-family: lato, sans-serif;
-        flex-direction: row;
         height: 90px;
-        justify-content: space-between;
         margin-bottom: 1.45rem;
         max-width: 960;
         padding: 1.45rem 1.0875rem;
@@ -21,14 +17,17 @@ div {
             margin: 0;
             a {
                 color: white;
+                font-size: 2.25rem;
+                font-weight: bold;
+                line-height: 1.1;
                 text-decoration: none;
+                text-rendering: optimizeLegibility;
             }
         }
         nav {
             #burger {
+                @include flex(column, center);
                 align-self: center;
-                display: flex;
-                flex-direction: column;
                 cursor: pointer;
                 margin: 2px;
                 padding: 5px;
@@ -72,18 +71,16 @@ div {
         }
     }
     #navSlider {
-        background: rebeccapurple;
+        background: $mediumGrey;
         margin: auto;
         position: absolute;
-        transition: top 800ms ease-in-out;
+        transition: top 600ms ease-in-out;
         width: 100%;
         z-index: 1;
         ul {
+            @include flex(column, center);
             align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 40vh;
+            height: 240px;
             list-style: none;
             margin: 0;
             li {
@@ -118,9 +115,8 @@ div {
                     display: none;
                 }
                 ul {
+                    @include flex(row, center);
                     align-items: center;
-                    display: flex;
-                    flex-direction: row;
                 }
             }
         }

@@ -1,21 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+body {
+  font-family: lato, sans-serif;
+}
+
 div header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rebeccapurple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: lato, sans-serif;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #828282;
+  font-family: lato, sans-serif;
+  height: 90px;
   margin-bottom: 1.45rem;
   max-width: 960;
   padding: 1.45rem 1.0875rem;
@@ -31,12 +47,14 @@ div header h1 {
 
 div header h1 a {
   color: white;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.1;
   text-decoration: none;
+  text-rendering: optimizeLegibility;
 }
 
 div header nav #burger {
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,6 +62,11 @@ div header nav #burger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   cursor: pointer;
   margin: 2px;
   padding: 5px;
@@ -97,19 +120,16 @@ div header nav ul li a:hover {
 }
 
 div #navSlider {
-  background: rebeccapurple;
+  background: #828282;
   margin: auto;
   position: absolute;
-  -webkit-transition: top 800ms ease-in-out;
-  transition: top 800ms ease-in-out;
+  -webkit-transition: top 600ms ease-in-out;
+  transition: top 600ms ease-in-out;
   width: 100%;
   z-index: 1;
 }
 
 div #navSlider ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +140,10 @@ div #navSlider ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 240px;
   list-style: none;
   margin: 0;
 }
@@ -155,9 +178,6 @@ div .slide-down {
     display: none;
   }
   div header nav ul {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165,6 +185,40 @@ div .slide-down {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
-/*# sourceMappingURL=header_styles.css.map */
+
+div main h1, div main h2 {
+  text-align: center;
+}
+
+div main h1 {
+  color: #4e67a7;
+}
+
+div footer {
+  background: #4e67a7;
+  bottom: 0;
+  margin-top: 2rem;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+}
+
+div footer p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+/*# sourceMappingURL=layout_styles.css.map */

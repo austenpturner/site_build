@@ -1,8 +1,6 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
-
-import "./header_styles.css"
 
 function Header() {
   const [navOpen, setNavOpen] = React.useState(false);
@@ -12,7 +10,7 @@ function Header() {
   };
 
     return (
-      <div>
+      <>
         <header>
           <h1>
             <Link to="/">
@@ -57,16 +55,16 @@ function Header() {
             </li>
           </ul>
         </div>
-      </div>
+      </>
     )
   }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
