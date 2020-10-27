@@ -1,23 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <h1>Hi people</h1> */}
-    <h1>Close Faster </h1>
+    <h1>Close Faster,</h1>
     <h2>With Human Centered AI.</h2>
-    {/* <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div>
+      <Link to="page-2">Schedule A Demo</Link>
+      <Link to="page-2">About Us</Link>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
+    {/* <ul>
+      <li>
+        <FontAwesomeIcon icon={ faCheckCircle } />
+        Get Their Attention
+      </li>
+      <li>
+        <FontAwesomeIcon icon={ faCheckCircle } />
+        Artificial Intelligence
+      </li>
+      <li>
+        <FontAwesomeIcon icon={ faCheckCircle } />
+        Faster Execution
+      </li>
+    </ul> */}
+    
   </Layout>
 )
 

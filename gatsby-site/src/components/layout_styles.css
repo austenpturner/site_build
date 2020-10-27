@@ -29,7 +29,7 @@ div header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #828282;
+  background: gray;
   font-family: lato, sans-serif;
   height: 90px;
   margin-bottom: 1.45rem;
@@ -50,6 +50,7 @@ div header h1 a {
   font-size: 2.25rem;
   font-weight: bold;
   line-height: 1.1;
+  margin-left: 2rem;
   text-decoration: none;
   text-rendering: optimizeLegibility;
 }
@@ -77,8 +78,8 @@ div header nav #burger .line {
   background: white;
   height: 3px;
   margin: 4px;
-  -webkit-transition: all 600ms ease-in-out;
-  transition: all 600ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   width: 40px;
 }
 
@@ -109,7 +110,7 @@ div header nav ul li {
 div header nav ul li a {
   border-bottom: solid 2px rgba(255, 255, 255, 0);
   color: white;
-  margin: 10px;
+  margin: 1.5rem;
   padding-bottom: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -120,11 +121,11 @@ div header nav ul li a:hover {
 }
 
 div #navSlider {
-  background: #828282;
+  background: gray;
   margin: auto;
   position: absolute;
-  -webkit-transition: top 600ms ease-in-out;
-  transition: top 600ms ease-in-out;
+  -webkit-transition: top 400ms ease-in-out;
+  transition: top 400ms ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -166,14 +167,14 @@ div #navSlider ul li a:hover {
 }
 
 div .slide-up {
-  top: -100vh;
+  top: -150px;
 }
 
 div .slide-down {
   top: 90px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   div header nav #burger {
     display: none;
   }
@@ -194,7 +195,14 @@ div .slide-down {
   }
 }
 
+div main {
+  margin: 14vh auto;
+}
+
 div main h1, div main h2 {
+  font-size: 3rem;
+  margin: 0 auto;
+  max-width: 90%;
   text-align: center;
 }
 
@@ -202,9 +210,74 @@ div main h1 {
   color: #4e67a7;
 }
 
+div main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.6rem auto;
+  max-width: 80%;
+}
+
+div main div a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.1rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  margin: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  width: 12.4rem;
+}
+
+div main div :first-child {
+  background: #ca4139;
+}
+
+div main div :last-child {
+  background: gray;
+}
+
+div main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+}
+
+div main ul li {
+  margin: 2rem;
+}
+
+div main ul li :first-child {
+  color: gray;
+  margin-right: 0.5rem;
+}
+
 div footer {
   background: #4e67a7;
   bottom: 0;
+  color: white;
   margin-top: 2rem;
   padding: 20px;
   position: fixed;
@@ -219,6 +292,38 @@ div footer p {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (hover: hover) {
+  div main {
+    margin: 20vh auto;
+  }
+}
+
+@media (min-width: 768px) {
+  div main {
+    margin: 20vh auto;
+  }
+  div main div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  div main div a {
+    font-size: 1rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin: 2rem;
+    width: 10.2rem;
   }
 }
 /*# sourceMappingURL=layout_styles.css.map */
