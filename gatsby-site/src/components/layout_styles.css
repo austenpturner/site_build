@@ -295,6 +295,11 @@ div main section ul li :first-child {
   margin-right: 0.5rem;
 }
 
+div main section:last-child div img {
+  height: 200px;
+  width: 200px;
+}
+
 div footer {
   background: #4e67a7;
   color: white;
