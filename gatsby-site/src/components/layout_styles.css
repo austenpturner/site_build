@@ -195,23 +195,30 @@ div .slide-down {
   }
 }
 
-div main section #title {
+.link-btn {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+div main #title-container #title {
   padding-top: 14vh;
   min-height: calc(100vh - 270px);
 }
 
-div main section #title h1, div main section #title h2 {
+div main #title-container #title h1, div main #title-container #title h2 {
   font-size: 3rem;
   margin: 0 auto;
   max-width: 95%;
   text-align: center;
 }
 
-div main section #title h1 {
+div main #title-container #title h1 {
   color: #4e67a7;
 }
 
-div main section #title div {
+div main #title-container #title div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,47 +233,43 @@ div main section #title div {
   max-width: 80%;
 }
 
-div main section #title div a {
+div main #title-container #title div a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 1rem;
   color: white;
   font-size: 1.1rem;
   height: 3rem;
   line-height: 2.8rem;
   margin: 0.8rem;
-  text-align: center;
-  text-decoration: none;
   width: 12.4rem;
 }
 
-div main section #title div :first-child {
+div main #title-container #title div :first-child {
   background: #ca4139;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
-div main section #title div :first-child:hover {
+div main #title-container #title div :first-child:hover {
   background: white;
   border: 2px solid #ca4139;
   color: black;
 }
 
-div main section #title div :last-child {
+div main #title-container #title div :last-child {
   background: gray;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
-div main section #title div :last-child:hover {
+div main #title-container #title div :last-child:hover {
   background: white;
   border: 2px solid gray;
   color: black;
 }
 
-div main section ul {
+div main #title-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,21 +286,57 @@ div main section ul {
   margin: 0 auto;
 }
 
-div main section ul li {
+div main #title-container ul li {
   color: white;
   margin: 2rem;
   padding-left: 20vw;
 }
 
-div main section ul li :first-child {
+div main #title-container ul li :first-child {
   color: white;
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
 
-div main section:last-child div img {
-  height: 200px;
-  width: 200px;
+div main #info div {
+  margin: 20px auto;
+}
+
+div main #info div .img-container {
+  height: 90vw;
+  margin: 20px auto;
+  overflow: hidden;
+  width: 90vw;
+}
+
+div main #info div .img-container img {
+  max-height: 90vw;
+}
+
+div main #info div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div main #info div div h4 {
+  font-size: 2rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+}
+
+div main #info div div a {
+  background: #ca4139;
+  color: white;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
 }
 
 div footer {
@@ -320,13 +359,13 @@ div footer p {
 }
 
 @media (min-width: 768px) {
-  div main section #title {
+  div main #title-container #title {
     min-height: calc(100vh - 210px);
     margin: 0 auto;
     max-width: 80%;
     padding-top: 20vh;
   }
-  div main section #title div {
+  div main #title-container #title div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,14 +378,14 @@ div footer p {
             justify-content: center;
     margin: 0 auto;
   }
-  div main section #title div a {
+  div main #title-container #title div a {
     font-size: 1rem;
     height: 2.7rem;
     line-height: 2.4rem;
     margin: 2rem;
     width: 10.2rem;
   }
-  div main section ul {
+  div main #title-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -358,11 +397,52 @@ div footer p {
         justify-content: space-around;
     height: 120px;
   }
-  div main section ul li {
+  div main #title-container ul li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     padding-left: 0;
+  }
+  div main #info div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 20px auto;
+  }
+  div main #info div .img-container {
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    width: 400px;
+  }
+  div main #info div .img-container img {
+    max-height: 400px;
+  }
+  div main #info div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div main #info div div h4 {
+    font-size: 2rem;
+    margin: 20px auto;
+    text-align: center;
+    width: 90%;
+  }
+  div main #info div div a {
+    padding: 0.7rem 1.3rem;
   }
 }
 /*# sourceMappingURL=layout_styles.css.map */

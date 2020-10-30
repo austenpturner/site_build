@@ -5,20 +5,21 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-import Image from "../components/image"
+import Image1 from "../components/image_files/image1"
+import Image2 from "../components/image_files/image2"
 
 const IndexPage = () => {
   const data = useStaticQuery(query)
   return (
     <Layout>
       <SEO title="Home" />
-      <section>
+      <section id="title-container">
         <div id="title"> 
           <h1>Close Faster,</h1>
           <h2>With Human Centered AI.</h2>
           <div>
-            <Link to="page-2">Schedule A Demo</Link>
-            <Link to="page-2">About Us</Link>
+            <Link className="link-btn" to="page-2">Schedule A Demo</Link>
+            <Link className="link-btn" to="page-2">About Us</Link>
           </div>
         </div>
         <ul>
@@ -36,11 +37,31 @@ const IndexPage = () => {
           </li>
         </ul>
       </section>
-      <section>
-        <Image
-          fluid={data.file.childImageSharp.fluid}
-          alt=""
-        />
+      <section id="info">
+        <div>
+          <div className="img-container">
+            <Image1
+              fluid={data.file.childImageSharp.fluid}
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Advanced Lead Generation</h4>
+            <Link className="link-btn">Learn More</Link>
+          </div>
+        </div>
+        <div>
+          <div className="img-container">
+            <Image2
+              fluid={data.file.childImageSharp.fluid}
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Artificial Intelligence</h4>
+            <Link className="link-btn">Learn More</Link>
+          </div>
+        </div>
       </section>
     </Layout>
   )

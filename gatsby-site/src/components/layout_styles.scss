@@ -35,9 +35,16 @@ body {
 @import "../components/header/headerStyles";
 
 // ----- ELEMENT STYLES ----- //
+.link-btn {
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
 div {
     main {
-        section {
+        #title-container{
             #title {
                 padding-top: 14vh;
                 min-height: calc(100vh - 270px);
@@ -56,15 +63,11 @@ div {
                     max-width: 80%;
                     a {
                         align-self: center;
-                        border: 2px solid rgba(0,0,0,0);
-                        border-radius: 1rem;
                         color: white;
                         font-size: 1.1rem;
                         height: 3rem;
                         line-height: 2.8rem;
                         margin: 0.8rem;
-                        text-align: center;
-                        text-decoration: none;
                         width: 12.4rem;
                     }
                     :first-child {
@@ -105,11 +108,32 @@ div {
                 }
             }
         }
-        section:last-child {
+        #info {
             div {
-                img {
-                    height: 200px;
-                    width: 200px;
+                margin: 20px auto;
+                .img-container {
+                    height: 90vw;
+                    margin: 20px auto;
+                    overflow: hidden;
+                    width: 90vw;
+                    img {
+                        max-height: 90vw;
+                    }
+                }
+                div {
+                    @include flex (column, space-around);
+                    h4 {
+                        font-size: 2rem;
+                        margin: 20px auto;
+                        text-align: center;
+                        width: 90%;
+                    }
+                    a {
+                        background: $salmonBerry;
+                        color: rgb(255,255,255);
+                        margin: 0 auto;
+                        padding: 0.7rem 1rem;
+                    }
                 }
             }
         }
@@ -140,7 +164,7 @@ div {
 @media (min-width: 768px) {
     div {
         main {
-            section {
+            #title-container {
                 #title {
                     min-height: calc(100vh - 210px);
                     margin: 0 auto;
@@ -164,6 +188,33 @@ div {
                     li {
                         align-self: center;
                         padding-left: 0;
+                    }
+                }
+            }
+            #info {
+                div {
+                    @include flex (row, space-around);
+                    margin: 20px auto;
+                    .img-container {
+                        height: 400px;
+                        margin: 20px auto;
+                        overflow: hidden;
+                        width: 400px;
+                        img {
+                            max-height: 400px;
+                        }
+                    }
+                    div {
+                        @include flex (column, space-around);
+                        h4 {
+                            font-size: 2rem;
+                            margin: 20px auto;
+                            text-align: center;
+                            width: 90%;
+                        }
+                        a {
+                            padding: 0.7rem 1.3rem;
+                        }
                     }
                 }
             }
