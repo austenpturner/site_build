@@ -37,50 +37,71 @@ body {
 // ----- ELEMENT STYLES ----- //
 div {
     main {
-        margin: 14vh auto;
-        h1, h2 {
-            font-size: 3rem;
-            margin: 0 auto;
-            max-width: 90%;
-            text-align: center;
-        }
-        h1 {
-            color: $inscopeBlue;
-        }
-        div {
-            @include flex (column, center);
-            margin: 1.6rem auto;
-            max-width: 80%;
-            a {
-                align-self: center;
-                border: none;
-                border-radius: 1rem;
-                color: white;
-                font-size: 1.1rem;
-                height: 2.8rem;
-                line-height: 2.8rem;
-                margin: 0.8rem;
-                text-align: center;
-                text-decoration: none;
-                width: 12.4rem;
+        section {
+            #title {
+                padding-top: 14vh;
+                min-height: calc(100vh - 270px);
+                h1, h2 {
+                    font-size: 3rem;
+                    margin: 0 auto;
+                    max-width: 95%;
+                    text-align: center;
+                }
+                h1 {
+                    color: $inscopeBlue;
+                }
+                div {
+                    @include flex (column, center);
+                    margin: 1.6rem auto;
+                    max-width: 80%;
+                    a {
+                        align-self: center;
+                        border: 2px solid rgba(0,0,0,0);
+                        border-radius: 1rem;
+                        color: white;
+                        font-size: 1.1rem;
+                        height: 3rem;
+                        line-height: 2.8rem;
+                        margin: 0.8rem;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 12.4rem;
+                    }
+                    :first-child {
+                        background: $salmonBerry;
+                        transition: all 200ms ease-in-out;
+                        &:hover {
+                            background: white;
+                            border: 2px solid $salmonBerry;
+                            color: black;
+                        }
+                    }
+                    :last-child {
+                        background: $mediumGrey;
+                        transition: all 200ms ease-in-out;
+                        &:hover {
+                            background: white;
+                            border: 2px solid $mediumGrey;
+                            color: black;
+                        }
+                    }
+                }
             }
-            :first-child {
-                background: $salmonBerry;
-            }
-            :last-child {
-                background: $mediumGrey;
-            }
-        }
-        ul {
-            @include flex (row, center);
-            list-style: none;
-            margin: 0 auto;
-            width: 90%;
-            li {
-                margin: 2rem;
-                :first-child {
-                    color: $mediumGrey;
-                    margin-right: 0.5rem;
+            ul {
+                @include flex (column, center);
+                background: $inscopeBlue;
+                height: 270px;
+                list-style: none;
+                margin: 0 auto;
+                li {
+                    color: white;
+                    margin: 2rem;
+                    padding-left: 20vw;
+                    :first-child {
+                        color: white;
+                        font-size: 1.2rem;
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
@@ -88,11 +109,11 @@ div {
     
     footer {
         background: $inscopeBlue;
-        bottom: 0;
+        // bottom: 0;
         color: white;
-        margin-top: 2rem;
+        height: 90px;
         padding: 20px;
-        position: fixed;
+        // position: absolute;
         width: 100%;
         p {
             margin: 10px auto;
@@ -108,27 +129,34 @@ div {
     }
 }
 
-@media only screen and (hover: hover) {
-    div {
-        main {
-            margin: 20vh auto;
-        }
-    }
-}
-
 @media (min-width: 768px) {
     div {
         main {
-            margin: 20vh auto;
-            div {
-                @include flex (row, center);
-                margin: 0 auto;
-                a {
-                    font-size: 1rem;
-                    height: 2.4rem;
-                    line-height: 2.4rem;
-                    margin: 2rem;
-                    width: 10.2rem;
+            section {
+                #title {
+                    min-height: calc(100vh - 210px);
+                    margin: 0 auto;
+                    max-width: 80%;
+                    padding-top: 20vh;
+                    div {
+                        @include flex (row, center);
+                        margin: 0 auto;
+                        a {
+                            font-size: 1rem;
+                            height: 2.7rem;
+                            line-height: 2.4rem;
+                            margin: 2rem;
+                            width: 10.2rem;
+                        }
+                    }
+                }
+                ul {
+                    @include flex (row, space-around);
+                    height: 120px;
+                    li {
+                        align-self: center;
+                        padding-left: 0;
+                    }
                 }
             }
         }
