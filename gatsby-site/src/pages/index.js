@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery } from "gatsby"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
@@ -23,15 +23,15 @@ const IndexPage = () => {
         </div>
         <ul>
           <li>
-            {/* <FontAwesomeIcon icon={ faCheckCircle } /> */}
+            <FontAwesomeIcon icon={faCheckCircle} />
             Get Their Attention
           </li>
           <li>
-            {/* <FontAwesomeIcon icon={ faCheckCircle } /> */}
+            <FontAwesomeIcon icon={faCheckCircle} />
             Faster Execution
           </li>
           <li>
-            {/* <FontAwesomeIcon icon={ faCheckCircle } /> */}
+            <FontAwesomeIcon icon={faCheckCircle} />
             Artificial Intelligence
           </li>
         </ul>
