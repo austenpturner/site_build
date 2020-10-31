@@ -26,90 +26,30 @@ $burntYellow: rgb(206,159,6);
     text-size-adjust: 100%;
 }
 
-// ----- PAGE STYLES ----- //
+// ----- GLOBAL STYLES ----- //
 body {
     font-family: lato, sans-serif;
 }
-
-// ----- COMPONENT STYLES ----- //
-@import "../components/header/headerStyles";
 
 // ----- ELEMENT STYLES ----- //
 .link-btn {
     border: 2px solid rgba(0,0,0,0);
     border-radius: 1rem;
+    cursor: pointer;
     text-align: center;
     text-decoration: none;
 }
 
+// ----- COMPONENT STYLES ----- //
+@import "../components/header/headerStyles";
+@import "../components//banner/bannerStyles";
+@import "../components/footer/footerStyles";
+
+// ----- PAGE STYLES ----- //
 div {
     main {
-        #title-container{
-            #title {
-                padding-top: 14vh;
-                min-height: calc(100vh - 270px);
-                h1, h2 {
-                    font-size: 3rem;
-                    margin: 0 auto;
-                    max-width: 95%;
-                    text-align: center;
-                }
-                h1 {
-                    color: $inscopeBlue;
-                }
-                div {
-                    @include flex (column, center);
-                    margin: 1.6rem auto;
-                    max-width: 80%;
-                    a {
-                        align-self: center;
-                        color: white;
-                        font-size: 1.1rem;
-                        height: 3rem;
-                        line-height: 2.8rem;
-                        margin: 0.8rem;
-                        width: 12.4rem;
-                    }
-                    :first-child {
-                        background: $salmonBerry;
-                        transition: all 200ms ease-in-out;
-                        &:hover {
-                            background: white;
-                            border: 2px solid $salmonBerry;
-                            color: black;
-                        }
-                    }
-                    :last-child {
-                        background: $mediumGrey;
-                        transition: all 200ms ease-in-out;
-                        &:hover {
-                            background: white;
-                            border: 2px solid $mediumGrey;
-                            color: black;
-                        }
-                    }
-                }
-            }
-            ul {
-                @include flex (column, center);
-                background: $inscopeBlue;
-                height: 270px;
-                list-style: none;
-                margin: 0 auto;
-                li {
-                    color: white;
-                    margin: 2rem;
-                    padding-left: 20vw;
-                    :first-child {
-                        color: white;
-                        font-size: 1.2rem;
-                        margin-right: 0.5rem;
-                    }
-                }
-            }
-        }
         #info {
-            div {
+            .section {
                 margin: 20px auto;
                 .img-container {
                     height: 90vw;
@@ -120,7 +60,7 @@ div {
                         max-height: 90vw;
                     }
                 }
-                div {
+                .content-container {
                     @include flex (column, space-around);
                     h4 {
                         font-size: 2rem;
@@ -138,20 +78,6 @@ div {
             }
         }
     }
-    
-    footer {
-        background: $inscopeBlue;
-        // bottom: 0;
-        color: white;
-        height: 90px;
-        padding: 20px;
-        // position: absolute;
-        width: 100%;
-        p {
-            margin: 10px auto;
-            text-align: center;
-        }
-    }
 }
 
 // ----- MEDIA QUERIES ----- //
@@ -164,58 +90,34 @@ div {
 @media (min-width: 768px) {
     div {
         main {
-            #title-container {
-                #title {
-                    min-height: calc(100vh - 210px);
-                    margin: 0 auto;
-                    max-width: 80%;
-                    padding-top: 20vh;
-                    div {
-                        @include flex (row, center);
-                        margin: 0 auto;
-                        a {
-                            font-size: 1rem;
-                            height: 2.7rem;
-                            line-height: 2.4rem;
-                            margin: 2rem;
-                            width: 10.2rem;
-                        }
-                    }
-                }
-                ul {
-                    @include flex (row, space-around);
-                    height: 120px;
-                    li {
-                        align-self: center;
-                        padding-left: 0;
-                    }
-                }
-            }
             #info {
-                div {
-                    @include flex (row, space-around);
-                    margin: 20px auto;
+                margin: 50px auto;
+                .section {
+                    margin: 10px auto;
+                    @include flex (row, center);
                     .img-container {
                         height: 400px;
-                        margin: 20px auto;
-                        overflow: hidden;
+                        margin: 10px;
                         width: 400px;
                         img {
-                            max-height: 400px;
+                            height: 400px;
                         }
                     }
-                    div {
-                        @include flex (column, space-around);
+                    .content-container {
+                        @include flex (column, center);
+                        height: 400px;
+                        margin: 10px;
+                        width: 400px;
                         h4 {
-                            font-size: 2rem;
-                            margin: 20px auto;
-                            text-align: center;
-                            width: 90%;
+                            padding: 1.2rem;
                         }
                         a {
                             padding: 0.7rem 1.3rem;
                         }
                     }
+                }
+                .section:last-child {
+                    flex-direction: row-reverse;
                 }
             }
         }

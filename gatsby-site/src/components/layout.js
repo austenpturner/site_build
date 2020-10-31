@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header/header"
+import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import "./layout_styles.css"
 
 const Layout = ({ children }) => {
@@ -21,9 +21,7 @@ const Layout = ({ children }) => {
       <Header/>
       <div>
         <main>{children}</main>
-        <footer>
-          <p>&copy; 2020 Inscope. All Rights Reserved.</p>
-        </footer>
+        <Footer />
       </div>
     </>
   )

@@ -15,6 +15,14 @@ body {
   font-family: lato, sans-serif;
 }
 
+.link-btn {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
 div header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,30 +203,23 @@ div .slide-down {
   }
 }
 
-.link-btn {
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 1rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-div main #title-container #title {
+.banner .title-container {
   padding-top: 14vh;
   min-height: calc(100vh - 270px);
 }
 
-div main #title-container #title h1, div main #title-container #title h2 {
+.banner .title-container h1, .banner .title-container h2 {
   font-size: 3rem;
   margin: 0 auto;
   max-width: 95%;
   text-align: center;
 }
 
-div main #title-container #title h1 {
+.banner .title-container h1 {
   color: #4e67a7;
 }
 
-div main #title-container #title div {
+.banner .title-container .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,7 +234,7 @@ div main #title-container #title div {
   max-width: 80%;
 }
 
-div main #title-container #title div a {
+.banner .title-container .btn-container a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -245,31 +246,31 @@ div main #title-container #title div a {
   width: 12.4rem;
 }
 
-div main #title-container #title div :first-child {
+.banner .title-container .btn-container :first-child {
   background: #ca4139;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
-div main #title-container #title div :first-child:hover {
+.banner .title-container .btn-container :first-child:hover {
   background: white;
   border: 2px solid #ca4139;
   color: black;
 }
 
-div main #title-container #title div :last-child {
+.banner .title-container .btn-container :last-child {
   background: gray;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
 
-div main #title-container #title div :last-child:hover {
+.banner .title-container .btn-container :last-child:hover {
   background: white;
   border: 2px solid gray;
   color: black;
 }
 
-div main #title-container ul {
+.banner ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,86 +287,26 @@ div main #title-container ul {
   margin: 0 auto;
 }
 
-div main #title-container ul li {
+.banner ul li {
   color: white;
   margin: 2rem;
   padding-left: 20vw;
 }
 
-div main #title-container ul li :first-child {
+.banner ul li :first-child {
   color: white;
   font-size: 1.2rem;
   margin-right: 0.5rem;
 }
 
-div main #info div {
-  margin: 20px auto;
-}
-
-div main #info div .img-container {
-  height: 90vw;
-  margin: 20px auto;
-  overflow: hidden;
-  width: 90vw;
-}
-
-div main #info div .img-container img {
-  max-height: 90vw;
-}
-
-div main #info div div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-div main #info div div h4 {
-  font-size: 2rem;
-  margin: 20px auto;
-  text-align: center;
-  width: 90%;
-}
-
-div main #info div div a {
-  background: #ca4139;
-  color: white;
-  margin: 0 auto;
-  padding: 0.7rem 1rem;
-}
-
-div footer {
-  background: #4e67a7;
-  color: white;
-  height: 90px;
-  padding: 20px;
-  width: 100%;
-}
-
-div footer p {
-  margin: 10px auto;
-  text-align: center;
-}
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
 @media (min-width: 768px) {
-  div main #title-container #title {
+  .banner .title-container {
     min-height: calc(100vh - 210px);
     margin: 0 auto;
     max-width: 80%;
     padding-top: 20vh;
   }
-  div main #title-container #title div {
+  .banner .title-container .btn-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -378,14 +319,14 @@ div footer p {
             justify-content: center;
     margin: 0 auto;
   }
-  div main #title-container #title div a {
+  .banner .title-container .btn-container a {
     font-size: 1rem;
     height: 2.7rem;
     line-height: 2.4rem;
     margin: 2rem;
     width: 10.2rem;
   }
-  div main #title-container ul {
+  .banner ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,13 +338,80 @@ div footer p {
         justify-content: space-around;
     height: 120px;
   }
-  div main #title-container ul li {
+  .banner ul li {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     padding-left: 0;
   }
-  div main #info div {
+}
+
+footer {
+  background: #4e67a7;
+  color: white;
+  height: 90px;
+  padding: 20px;
+  width: 100%;
+}
+
+footer p {
+  margin: 10px auto;
+  text-align: center;
+}
+
+div main #info .section {
+  margin: 20px auto;
+}
+
+div main #info .section .img-container {
+  height: 90vw;
+  margin: 20px auto;
+  overflow: hidden;
+  width: 90vw;
+}
+
+div main #info .section .img-container img {
+  max-height: 90vw;
+}
+
+div main #info .section .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div main #info .section .content-container h4 {
+  font-size: 2rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+}
+
+div main #info .section .content-container a {
+  background: #ca4139;
+  color: white;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  div main #info {
+    margin: 50px auto;
+  }
+  div main #info .section {
+    margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -411,20 +419,19 @@ div footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 20px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  div main #info div .img-container {
+  div main #info .section .img-container {
     height: 400px;
-    margin: 20px auto;
-    overflow: hidden;
+    margin: 10px;
     width: 400px;
   }
-  div main #info div .img-container img {
-    max-height: 400px;
+  div main #info .section .img-container img {
+    height: 400px;
   }
-  div main #info div div {
+  div main #info .section .content-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,17 +439,24 @@ div footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 400px;
+    margin: 10px;
+    width: 400px;
   }
-  div main #info div div h4 {
-    font-size: 2rem;
-    margin: 20px auto;
-    text-align: center;
-    width: 90%;
+  div main #info .section .content-container h4 {
+    padding: 1.2rem;
   }
-  div main #info div div a {
+  div main #info .section .content-container a {
     padding: 0.7rem 1.3rem;
+  }
+  div main #info .section:last-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 }
 /*# sourceMappingURL=layout_styles.css.map */
