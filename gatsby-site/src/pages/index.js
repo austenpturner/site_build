@@ -1,4 +1,5 @@
 import React from "react"
+import Fade from 'react-reveal/Fade';
 import { Link, useStaticQuery } from "gatsby"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -21,10 +22,12 @@ const IndexPage = () => {
               alt=""
             />
           </div>
-          <div className="content-container">
-            <h4>Advanced Lead Generation</h4>
-            <Link className="link-btn">Learn More</Link>
-          </div>
+          <Fade right>
+            <div className="content-container">
+                <h4>Advanced Lead Generation</h4>
+                <Link className="link-btn">Learn More</Link>
+            </div>
+          </Fade>
         </div>
         <div className="section">
           <div className="img-container">
@@ -33,10 +36,12 @@ const IndexPage = () => {
               alt=""
             />
           </div>
-          <div className="content-container">
-            <h4>Artificial Intelligence</h4>
-            <Link className="link-btn">Learn More</Link>
-          </div>
+          <Fade left>
+            <div className="content-container">
+                <h4>Artificial Intelligence</h4>
+                <Link className="link-btn">Learn More</Link>
+            </div>
+          </Fade>
         </div>
       </div>
     </Layout>

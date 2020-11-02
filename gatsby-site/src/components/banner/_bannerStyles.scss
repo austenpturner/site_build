@@ -1,7 +1,7 @@
 .banner {
     .title-container {
-        padding-top: 14vh;
-        min-height: calc(100vh - 270px);
+        padding-top: 23vh;
+        min-height: calc(100vh - 100px);
         h1, h2 {
             font-size: 3rem;
             margin: 0 auto;
@@ -50,26 +50,48 @@
         height: 270px;
         list-style: none;
         margin: 0 auto;
+        transition: background 200ms ease-in-out;
         li {
-            color: white;
-            margin: 2rem;
-            padding-left: 20vw;
+            color: rgb(255,255,255);
+            // color: $inscopeBlue;
+            font-size: 1.1rem;
+            margin: 2rem auto;
+            // opacity: 0;
+            // transition: opacity 200ms ease-in-out;
+            width: 50%;
             :first-child {
-                color: white;
+                color: rgb(255,255,255);
+                // color: $inscopeBlue;
                 font-size: 1.2rem;
                 margin-right: 0.5rem;
+                transition: color 200ms ease-in-out;
             }
         }
     }
 }
 
+// html:not([data-scroll="0"]) {
+//     .banner {
+//         ul {
+//             background: rgb(255,255,255);
+//             li {
+//                 color: $inscopeBlue;
+//                 opacity: 1;
+//                 :first-child {
+//                     color: $inscopeBlue;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 @media (min-width: 768px) {
     .banner {
         .title-container {
-            min-height: calc(100vh - 210px);
+            min-height: calc(100vh - 120px);
             margin: 0 auto;
             max-width: 80%;
-            padding-top: 20vh;
+            padding-top: 30vh;
             .btn-container {
                 @include flex (row, center);
                 margin: 0 auto;
@@ -88,6 +110,7 @@
             li {
                 align-self: center;
                 padding-left: 0;
+                text-align: center;
             }
         }
     }

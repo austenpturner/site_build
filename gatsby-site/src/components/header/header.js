@@ -23,13 +23,13 @@ function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/page-2">Company</Link>
+            <Link to="/about">Company</Link>
           </li>
           <li>
-            <Link to="/page-2">Contact</Link>
+            <Link to="/about">Contact</Link>
           </li>
           <li>
-            <Link to="/page-2">Blog</Link>
+            <Link to="/about">Blog</Link>
           </li>
         </ul>
         <div id="burger" onClick={handleNavSlide}>
@@ -42,16 +42,16 @@ function Header() {
       <div id="navSlider" className={navOpen ? "slide-down" : "slide-up"}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link onClick={() => setNavOpen(false)} to="/">Home</Link>
           </li>
           <li>
-            <Link to="/page-2">Company</Link>
+            <Link onClick={() => setNavOpen(false)} to="/about">Company</Link>
           </li>
           <li>
-            <Link to="/page-2">Contact</Link>
+            <Link onClick={() => setNavOpen(false)} to="/about">Contact</Link>
           </li>
           <li>
-            <Link to="/page-2">Blog</Link>
+            <Link onClick={() => setNavOpen(false)} to="/about">Blog</Link>
           </li>
         </ul>
       </div>

@@ -43,8 +43,10 @@ div header {
   margin-bottom: 1.45rem;
   max-width: 960;
   padding: 1.45rem 1.0875rem;
-  position: relative;
+  position: fixed;
   margin: 0 auto;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -182,6 +184,11 @@ div .slide-down {
   top: 90px;
 }
 
+html:not([data-scroll="0"]) div header {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (min-width: 768px) {
   div header nav #burger {
     display: none;
@@ -204,8 +211,8 @@ div .slide-down {
 }
 
 .banner .title-container {
-  padding-top: 14vh;
-  min-height: calc(100vh - 270px);
+  padding-top: 23vh;
+  min-height: calc(100vh - 100px);
 }
 
 .banner .title-container h1, .banner .title-container h2 {
@@ -285,26 +292,31 @@ div .slide-down {
   height: 270px;
   list-style: none;
   margin: 0 auto;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
 }
 
 .banner ul li {
   color: white;
-  margin: 2rem;
-  padding-left: 20vw;
+  font-size: 1.1rem;
+  margin: 2rem auto;
+  width: 50%;
 }
 
 .banner ul li :first-child {
   color: white;
   font-size: 1.2rem;
   margin-right: 0.5rem;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 
 @media (min-width: 768px) {
   .banner .title-container {
-    min-height: calc(100vh - 210px);
+    min-height: calc(100vh - 120px);
     margin: 0 auto;
     max-width: 80%;
-    padding-top: 20vh;
+    padding-top: 30vh;
   }
   .banner .title-container .btn-container {
     display: -webkit-box;
@@ -343,6 +355,7 @@ div .slide-down {
         -ms-grid-row-align: center;
         align-self: center;
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -357,6 +370,10 @@ footer {
 footer p {
   margin: 10px auto;
   text-align: center;
+}
+
+div main #info {
+  margin: 50px auto;
 }
 
 div main #info .section {
