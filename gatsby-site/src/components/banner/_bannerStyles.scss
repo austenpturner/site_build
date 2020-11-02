@@ -28,18 +28,16 @@
                 background: $salmonBerry;
                 transition: all 200ms ease-in-out;
                 &:hover {
-                    background: white;
-                    border: 2px solid $salmonBerry;
-                    color: black;
+                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                    background: rgb(221, 66, 58);
                 }
             }
             :last-child {
                 background: $mediumGrey;
                 transition: all 200ms ease-in-out;
                 &:hover {
-                    background: white;
-                    border: 2px solid $mediumGrey;
-                    color: black;
+                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                    background: rgb(133, 133, 133);
                 }
             }
         }

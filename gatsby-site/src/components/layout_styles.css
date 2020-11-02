@@ -124,6 +124,8 @@ div header nav ul li a {
   padding-bottom: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: border 200ms ease-in-out;
+  transition: border 200ms ease-in-out;
 }
 
 div header nav ul li a:hover {
@@ -170,6 +172,8 @@ div #navSlider ul li a {
   padding-bottom: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: border 200ms ease-in-out;
+  transition: border 200ms ease-in-out;
 }
 
 div #navSlider ul li a:hover {
@@ -260,9 +264,9 @@ html:not([data-scroll="0"]) div header {
 }
 
 .banner .title-container .btn-container :first-child:hover {
-  background: white;
-  border: 2px solid #ca4139;
-  color: black;
+  -webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.6);
+  background: #dd423a;
 }
 
 .banner .title-container .btn-container :last-child {
@@ -272,9 +276,9 @@ html:not([data-scroll="0"]) div header {
 }
 
 .banner .title-container .btn-container :last-child:hover {
-  background: white;
-  border: 2px solid gray;
-  color: black;
+  -webkit-box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: -1px 1px 6px rgba(0, 0, 0, 0.6);
+  background: #858585;
 }
 
 .banner ul {
