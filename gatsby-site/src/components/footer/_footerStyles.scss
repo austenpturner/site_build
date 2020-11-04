@@ -1,19 +1,37 @@
 footer {
-    background: $mediumGrey;
-    // bottom: 0;
+    background: $inscopeBlue;
     color: white;
-    // height: 90px;
     padding: 20px;
-    // position: absolute;
     width: 100%;
     ul {
-        @include flex (column, center);
-        padding: 30px;
+        @include flex (column, left);
+        margin: 0px auto;
+        max-width: 800px;
+        padding: 10px 30px 10px 10vw;
         li {
+            cursor: pointer;
+            font-size: 0.9rem;
             list-style: none;
+            margin: 0.5rem;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    #social-links {
+        @include flex (row, center);
+        padding: 10px;
+        li {
+            margin: 0 auto;
+            padding: 0.8rem 1.8rem;
+            img {
+                width: 1.5rem;
+            }
         }
     }
     p {
+        font-size: 0.9rem;
         margin: 10px auto;
         text-align: center;
     }
@@ -23,6 +41,14 @@ footer {
     footer {
         ul {
             @include flex (row, space-around);
+            padding: 30px;
+        }
+        #social-links {
+            @include flex (row, center);
+            li {
+                margin: 0px;
+                padding: 0.8rem 1.8rem;
+            }
         }
     }
 }

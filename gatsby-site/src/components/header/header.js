@@ -26,10 +26,10 @@ function Header() {
             <Link to="/about">Company</Link>
           </li>
           <li>
-            <Link to="/about">Contact</Link>
+            <Link to="/about">Blog</Link>
           </li>
           <li>
-            <Link to="/about">Blog</Link>
+            <Link to="/about">Contact</Link>
           </li>
         </ul>
         <div id="burger" onClick={handleNavSlide}>

@@ -1,42 +1,52 @@
 import React from "react";
-import { Link } from "gatsby";
-// import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
+import FacebookSVG from "../image_files/fbSVG";
+import InstagramSVG from "../image_files/instaSVG";
+import TwitterSVG from "../image_files/twitterSVG";
+import LinkedInSVG from "../image_files/linkedInSVG";
 
 const Footer = () => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <footer>
-      {/* <ul>
+      <ul>
         <li>
-          <Link>Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link>Company</Link>
+          <Link to="/about">Company</Link>
         </li>
         <li>
-          <Link>Contact</Link>
+          <Link to="/">Blog</Link>
         </li>
         <li>
-          <Link>Blog</Link>
+          <Link to="/">Contact</Link>
         </li>
-      </ul> */}
-      <p>&copy; 2020 Inscope. All Rights Reserved.</p>
+      </ul>
+      <ul id="social-links">
+        <li>
+          <FacebookSVG 
+            alt="Facebook symbol"
+          />
+        </li>
+        <li>
+          <LinkedInSVG 
+            alt="LinkedIn symbol"
+          />
+        </li>
+        <li>
+          <InstagramSVG 
+            alt="Instagram symbol"
+          />
+        </li>
+        <li>
+          <TwitterSVG 
+            alt="Twitter symbol"
+          />
+        </li>
+      </ul>
+      <p>&copy; 2020 Inscope</p>
     </footer>
   )
-}
+};
 
-// Footer.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
-
-export default Footer
+export default Footer;

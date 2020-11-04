@@ -1,11 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-// import Img from "gatsby-image"
 
 const Image1 = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "annie-spratt-dWYU3i-mqEo-unsplash.jpg" }) {
+      file(relativePath: { eq: "coffee-shop.jpg" }) {
         childImageSharp {
           fluid {
             src

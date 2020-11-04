@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Image2 = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "neve-web-design-studio-10.jpg" }) {
+      file(relativePath: { eq: "iphone.jpg" }) {
         childImageSharp {
           fluid {
             src

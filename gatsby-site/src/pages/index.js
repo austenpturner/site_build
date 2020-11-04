@@ -1,8 +1,7 @@
 import React from "react"
 import Fade from 'react-reveal/Fade';
-import { Link, useStaticQuery } from "gatsby"
-import { graphql } from "gatsby"
-// import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
+// import { graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
@@ -23,7 +22,7 @@ const links = [
 ];
 
 const IndexPage = () => {
-  const data = useStaticQuery(query)
+  // const data = useStaticQuery(query)
   return (
     <Layout>
       <SEO title="Home" />
@@ -47,8 +46,7 @@ const IndexPage = () => {
         <div className="section">
           <div className="img-container">
             <Image1
-              fluid={data.file.childImageSharp.fluid}
-              alt=""
+              alt="people working in a coffee shop"
             />
           </div>
           <Fade right>
@@ -61,8 +59,7 @@ const IndexPage = () => {
         <div className="section">
           <div className="img-container">
             <Image2
-              fluid={data.file.childImageSharp.fluid}
-              alt=""
+              alt="view of iphone screen"
             />
           </div>
           <Fade left>
@@ -83,18 +80,5 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query MyQuery {
-    file(relativePath: { eq: "annie-spratt-dWYU3i-mqEo-unsplash.jpg" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage
