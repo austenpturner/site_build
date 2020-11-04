@@ -69,20 +69,20 @@
     }
 }
 
-// html:not([data-scroll="0"]) {
-//     .banner {
-//         ul {
-//             background: rgb(255,255,255);
-//             li {
-//                 color: $inscopeBlue;
-//                 opacity: 1;
-//                 :first-child {
-//                     color: $inscopeBlue;
-//                 }
-//             }
-//         }
-//     }
-// }
+html:not([data-scroll="0"]) {
+    .banner {
+        ul {
+            background: rgb(255,255,255);
+            li {
+                color: $inscopeBlue;
+                opacity: 1;
+                :first-child {
+                    color: $inscopeBlue;
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 768px) {
     .banner {

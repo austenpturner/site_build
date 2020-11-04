@@ -1,18 +1,8 @@
-import React from "react"
-import { Link, useStaticQuery } from "gatsby"
-import PropTypes from "prop-types"
+import React from "react";
+import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
 const Banner = ({ heading, subHeading, links, children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   // debounce function
   // mark scroll event at passive 
   // creates smooth CSS transition on page scroll
@@ -53,10 +43,10 @@ const Banner = ({ heading, subHeading, links, children }) => {
         {children}
     </div>
   )
-}
+};
 
 Banner.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Banner
+export default Banner;
