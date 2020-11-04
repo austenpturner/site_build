@@ -9,6 +9,8 @@ $salmonBerry: rgb(202,65,57);
 $limeGreen: rgb(49,178,73);
 $burntYellow: rgb(206,159,6);
 
+$headerHeight: 70px;
+
 // ----- SASS MIXINS ----- //
 @mixin flex ($direction, $justify) {
     display: flex;
@@ -76,6 +78,19 @@ div {
                         padding: 0.7rem 1rem;
                     }
                 }
+            }
+        }
+        #last-section {
+            @include flex(row, space-around);
+            background: $inscopeBlue;
+            img {
+                height: 400px;
+                width: 400px;
+            }
+            h4 {
+                color: rgb(255,255,255);
+                font-size: 2rem;
+                text-align: center;
             }
         }
     }

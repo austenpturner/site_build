@@ -4,7 +4,7 @@ div {
         align-items: center;
         background: $mediumGrey;
         font-family: lato, sans-serif;
-        height: 90px;
+        height: $headerHeight;
         margin-bottom: 1.45rem;
         max-width: 960;
         padding: 1.45rem 1.0875rem;
@@ -75,7 +75,7 @@ div {
     #navSlider {
         background: $mediumGrey;
         margin: auto;
-        position: absolute;
+        position: fixed;
         transition: top 400ms ease-in-out;
         width: 100%;
         z-index: 1;
@@ -103,10 +103,10 @@ div {
         }
     }
     .slide-up {
-        top: -150px;
+        top: -240px - $headerHeight;
     }
     .slide-down {
-        top: 90px;
+        top: $headerHeight;
     }
 }
 

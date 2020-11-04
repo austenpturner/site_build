@@ -1,13 +1,28 @@
 footer {
-    background: $inscopeBlue;
+    background: $mediumGrey;
     // bottom: 0;
     color: white;
-    height: 90px;
+    // height: 90px;
     padding: 20px;
     // position: absolute;
     width: 100%;
+    ul {
+        @include flex (column, center);
+        padding: 30px;
+        li {
+            list-style: none;
+        }
+    }
     p {
         margin: 10px auto;
         text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        ul {
+            @include flex (row, space-around);
+        }
     }
 }
