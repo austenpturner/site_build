@@ -3,6 +3,7 @@ div {
         @include flex(row, space-between);
         align-items: center;
         background: $mediumGrey;
+        box-shadow: 0px 2px 6px rgba(60,60,60,0.2);
         font-family: lato, sans-serif;
         height: $headerHeight;
         margin-bottom: 1.45rem;
@@ -110,18 +111,13 @@ div {
     }
 }
 
-html:not([data-scroll="0"]) {
-    div {
-        header {
-            // background: rgb(255,255,255);
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-            // opacity: 0.9;
-        }
-        // #navSlider {
-        //     opacity: 0.9;
-        // }
-    }
-}
+// html:not([data-scroll="0"]) {
+//     div {
+//         header {
+//             box-shadow: 0px 2px 6px rgba(60,60,60,0.2);
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 768px) {
     div {

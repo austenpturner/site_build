@@ -17,7 +17,7 @@ body {
 
 .link-btn {
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 1rem;
+  border-radius: 6px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -38,6 +38,8 @@ div header {
       -ms-flex-align: center;
           align-items: center;
   background: gray;
+  -webkit-box-shadow: 0px 2px 6px rgba(60, 60, 60, 0.2);
+          box-shadow: 0px 2px 6px rgba(60, 60, 60, 0.2);
   font-family: lato, sans-serif;
   height: 70px;
   margin-bottom: 1.45rem;
@@ -188,11 +190,6 @@ div .slide-down {
   top: 70px;
 }
 
-html:not([data-scroll="0"]) div header {
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
 @media only screen and (min-width: 768px) {
   div header nav #burger {
     display: none;
@@ -296,8 +293,8 @@ html:not([data-scroll="0"]) div header {
   height: 270px;
   list-style: none;
   margin: 0 auto;
-  -webkit-transition: background 200ms ease-in-out;
-  transition: background 200ms ease-in-out;
+  -webkit-transition: background 150ms ease-in-out;
+  transition: background 150ms ease-in-out;
 }
 
 .banner ul li {
@@ -305,6 +302,8 @@ html:not([data-scroll="0"]) div header {
   font-size: 1.1rem;
   margin: 2rem auto;
   max-width: 300px;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
   width: 50%;
 }
 
@@ -312,8 +311,8 @@ html:not([data-scroll="0"]) div header {
   color: white;
   font-size: 1.2rem;
   margin-right: 0.5rem;
-  -webkit-transition: color 200ms ease-in-out;
-  transition: color 200ms ease-in-out;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
 html:not([data-scroll="0"]) .banner ul {
@@ -322,7 +321,6 @@ html:not([data-scroll="0"]) .banner ul {
 
 html:not([data-scroll="0"]) .banner ul li {
   color: #4e67a7;
-  opacity: 1;
 }
 
 html:not([data-scroll="0"]) .banner ul li :first-child {
@@ -377,26 +375,22 @@ html:not([data-scroll="0"]) .banner ul li :first-child {
   }
 }
 
-#info {
-  margin: 50px auto;
+.section {
+  margin: 70px auto;
 }
 
-#info .section {
-  margin: 20px auto;
-}
-
-#info .section .img-container {
+.section .img-container {
   height: 90vw;
   margin: 20px auto;
   overflow: hidden;
   width: 90vw;
 }
 
-#info .section .img-container img {
+.section .img-container img {
   max-height: 90vw;
 }
 
-#info .section .content-container {
+.section .content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,14 +402,14 @@ html:not([data-scroll="0"]) .banner ul li :first-child {
       justify-content: space-around;
 }
 
-#info .section .content-container h4 {
+.section .content-container h4 {
   font-size: 2rem;
   margin: 20px auto;
   text-align: center;
   width: 90%;
 }
 
-#info .section .content-container a {
+.section .content-container a {
   background: #ca4139;
   color: white;
   margin: 0 auto;
@@ -423,10 +417,7 @@ html:not([data-scroll="0"]) .banner ul li :first-child {
 }
 
 @media (min-width: 768px) {
-  #info {
-    margin: 50px auto;
-  }
-  #info .section {
+  .section {
     margin: 10px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -439,15 +430,15 @@ html:not([data-scroll="0"]) .banner ul li :first-child {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #info .section .img-container {
+  .section .img-container {
     height: 400px;
     margin: 10px;
     width: 400px;
   }
-  #info .section .img-container img {
+  .section .img-container img {
     height: 400px;
   }
-  #info .section .content-container {
+  .section .content-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -462,13 +453,13 @@ html:not([data-scroll="0"]) .banner ul li :first-child {
     margin: 10px;
     width: 400px;
   }
-  #info .section .content-container h4 {
+  .section .content-container h4 {
     padding: 1.2rem;
   }
-  #info .section .content-container a {
+  .section .content-container a {
     padding: 0.7rem 1.3rem;
   }
-  #info .section:last-child {
+  .section:last-child {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;

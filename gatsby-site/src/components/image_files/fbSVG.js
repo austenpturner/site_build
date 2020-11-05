@@ -10,8 +10,6 @@ const FacebookSVG = () => {
 		}
 	`)
 
-  	console.log(data);
-
   	if (!data?.file?.publicURL) {
     	return <div>Picture not found</div>
   	};
