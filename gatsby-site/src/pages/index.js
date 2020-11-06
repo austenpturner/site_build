@@ -31,6 +31,7 @@ const bannerLinks = [
 
 const sectionContent = [
   {
+    num: 1,
     heading: "Advanced Lead Generation",
     content: "",
     links: [
@@ -42,6 +43,7 @@ const sectionContent = [
     imgComponent: Image1,
   },
   {
+    num: 2,
     heading: "Artificial Intelligence",
     content: "",
     links: [

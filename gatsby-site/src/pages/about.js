@@ -31,12 +31,14 @@ const links = [
 
 const sectionContent = [
   {
+    num: 1,
     heading: "What is inscope.ai?",
     content: "Inscope is a powerful sales and recruiting messaging platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
     links: [],
     imgComponent: Image3,
   },
   {
+    num: 2,
     heading: "Want to join our team?",
     content: "We are a fast-growing Seattle based start-up. We would love for you to potentially join our fast-paced, deeply collaborative agile team.",
     links: [
@@ -58,9 +60,11 @@ const About = () => (
       links={links} 
       list={listInfo} 
     />
-    {sectionContent.map(props => {
+    {sectionContent.map((props, index) => {
         return (
-          <Section key={props.heading} {...props} />
+          <Section key={index} {...props} >
+            <p>{sectionContent[index].content}</p>
+          </Section>
         )
       })}
   </Layout>

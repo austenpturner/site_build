@@ -1,8 +1,12 @@
 .section {
-    margin: 70px auto;
+    margin: 0px 20px;
+    max-width: 800px;
+    width: 90%;
     .img-container {
         height: 90vw;
-        margin: 20px auto;
+        margin: 0px auto;
+        max-height: 400px;
+        max-width: 400px;
         overflow: hidden;
         width: 90vw;
         img {
@@ -10,48 +14,60 @@
         }
     }
     .content-container {
-        @include flex (column, space-around);
+        @include flex (column, center);
         h4 {
             font-size: 2rem;
-            margin: 20px auto;
+            margin: 20px auto 10px;
             text-align: center;
             width: 90%;
+        }
+        p {
+            margin: 10px auto 20px;
+            width: 80%;
         }
         a {
             background: $salmonBerry;
             color: rgb(255,255,255);
-            margin: 0 auto;
-            padding: 0.7rem 1rem;
+            margin: 20px auto;
+            padding: 10px 20px;
         }
     }
 }
 
+.section:first-child {
+    margin-top: 100px;
+}
+
+.section:last-child {
+    margin-bottom: 50px;
+}
+
 @media (min-width: 768px) {
     .section {
-        margin: 10px auto;
+        margin: auto;
         @include flex (row, center);
         .img-container {
             height: 400px;
-            margin: 10px;
+            // margin: 10px;
             width: 400px;
             img {
-                height: 400px;
+                max-height: 400px;
             }
         }
         .content-container {
             @include flex (column, center);
             height: 400px;
-            margin: 10px;
+            // margin: 10px;
             width: 400px;
             h4 {
-                padding: 1.2rem;
+                padding: 10px;
             }
             a {
                 padding: 0.7rem 1.3rem;
             }
         }
     }
-    .section:last-child {
+    .section:nth-child(odd) {
         flex-direction: row-reverse;
     }
 }

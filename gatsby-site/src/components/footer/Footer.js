@@ -44,7 +44,7 @@ const Footer = () => {
           />
         </li>
       </ul>
-      <p>&copy; 2020 Inscope</p>
+      <p>&copy; 2020 Inscope.ai</p>
     </footer>
   )
 };

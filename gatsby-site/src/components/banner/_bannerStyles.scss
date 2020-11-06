@@ -43,19 +43,19 @@
         }
     }
     ul {
-        @include flex (column, center);
+        @include flex (column, space-around);
         background: $inscopeBlue;
         height: 270px;
         list-style: none;
-        margin: 0 auto;
+        margin: 0 auto 20px;
         transition: background 150ms ease-in-out;
         li {
             color: rgb(255,255,255);
             font-size: 1.1rem;
-            margin: 2rem auto;
-            max-width: 300px;
+            margin: 20px auto;
+            min-width: 200px;
             transition: color 150ms ease-in-out;
-            width: 50%;
+            width: 40%;
             :first-child {
                 color: rgb(255,255,255);
                 font-size: 1.2rem;
@@ -100,12 +100,16 @@ html:not([data-scroll="0"]) {
             }
         }
         ul {
-            @include flex (row, space-around);
+            @include flex (row, center);
             height: 120px;
             li {
                 align-self: center;
+                font-size: 1.1rem;
+                margin: 20px;
+                max-width: 300px;
                 padding-left: 0;
                 text-align: center;
+                width: 33.3%;
             }
         }
     }
