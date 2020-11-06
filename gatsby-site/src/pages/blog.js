@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-const Contact = () => (
+const Blog = () => (
   <Layout>
     <SEO title="About" />
-    <h1>Get In Touch</h1>
+    <h1>Blog</h1>
   </Layout>
 )
 
-export default Contact;
+export default Blog;
