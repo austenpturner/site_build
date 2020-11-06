@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-import React, { useState } from "react"
+import { Link } from "gatsby";
+import React, { useState } from "react";
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
