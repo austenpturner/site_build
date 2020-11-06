@@ -15,7 +15,7 @@ const aboutContent = {
     ],
     bannerLinks: [
         {
-            "to": "/",
+            "to": "/contact",
             "title": "Schedule A Demo"
         },
         {
@@ -30,7 +30,7 @@ const aboutContent = {
             content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
             links: [
               {
-                to: "/",
+                to: "/about",
                 title: "Learn More"
               }
             ],

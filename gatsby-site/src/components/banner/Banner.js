@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Banner = ({ heading, subHeading, links, list }) => {
-  // debounce function
-  // mark scroll event at passive 
+  // debounce function & mark scroll event at passive 
   // creates smooth CSS transition on page scroll
   // source: https://css-tricks.com/styling-based-on-scroll-position/
   const debounce = (fn) => {

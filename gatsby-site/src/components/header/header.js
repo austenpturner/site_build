@@ -48,10 +48,10 @@ function Header() {
             <Link onClick={() => setNavOpen(false)} to="/about">Company</Link>
           </li>
           <li>
-            <Link onClick={() => setNavOpen(false)} to="/about">Contact</Link>
+            <Link onClick={() => setNavOpen(false)} to="/contact">Contact</Link>
           </li>
           <li>
-            <Link onClick={() => setNavOpen(false)} to="/about">Blog</Link>
+            <Link onClick={() => setNavOpen(false)} to="/blog">Blog</Link>
           </li>
         </ul>
       </div>

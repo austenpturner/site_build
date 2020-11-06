@@ -15,7 +15,7 @@ const indexContent = {
     ],
     bannerLinks: [
         {
-          to: "/",
+          to: "/contact",
           title: "Schedule A Demo"
         },
         {
@@ -30,7 +30,7 @@ const indexContent = {
           content: "",
           links: [
             {
-              to: "/",
+              to: "/contact",
               title: "Schedule A Demo"
             }
           ],
@@ -42,7 +42,7 @@ const indexContent = {
           content: "",
           links: [
             {
-              to: "/",
+              to: "/about",
               title: "Learn More"
             }
           ],
