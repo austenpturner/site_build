@@ -16,10 +16,10 @@ const Footer = () => {
           <Link to="/about">Company</Link>
         </li>
         <li>
-          <Link to="/">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <ul id="social-links">
