@@ -1,20 +1,53 @@
+import Image1 from "../components/image_files/image1";
+import Image2 from "../components/image_files/image2";
+
 const indexContent = {
-    "headings": {
-        "h1": "Close Faster,",
-        "h2": "With Human Centered AI"
-    },
-    "links": [
+    listInfo: [
         {
-            "link-btn": "Schedule A Demo",
-            "link-btn": "About Us"
+          content: "Get Their Attention"
+        },
+        {
+          content: "Faster Execution"
+        },
+        {
+          content: "Artificial Intelligence"
+        },
+    ],
+    bannerLinks: [
+        {
+          to: "/",
+          title: "Schedule A Demo"
+        },
+        {
+          to: "/about",
+          title: "About Us"
         }
     ],
-    "info-bullets": [
+    sectionContent: [
         {
-            "bullet": "Get Their Attention",
-            "bullet": "Faster Excecution",
-            "bullet": "Artificial Intelligence"
-        }
+          num: 1,
+          heading: "Advanced Lead Generation",
+          content: "",
+          links: [
+            {
+              to: "/",
+              title: "Schedule A Demo"
+            }
+          ],
+          imgComponent: Image1,
+        },
+        {
+          num: 2,
+          heading: "Artificial Intelligence",
+          content: "",
+          links: [
+            {
+              to: "/",
+              title: "Learn More"
+            }
+          ],
+          imgComponent: Image2,
+        },
     ]
 };
 

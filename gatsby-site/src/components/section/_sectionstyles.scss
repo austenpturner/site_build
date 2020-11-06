@@ -19,11 +19,9 @@
             font-size: 2rem;
             margin: 20px auto 10px;
             text-align: center;
-            width: 90%;
         }
         p {
             margin: 10px auto 20px;
-            width: 80%;
         }
         a {
             background: $salmonBerry;
@@ -48,7 +46,6 @@
         @include flex (row, center);
         .img-container {
             height: 400px;
-            // margin: 10px;
             width: 400px;
             img {
                 max-height: 400px;
@@ -57,10 +54,13 @@
         .content-container {
             @include flex (column, center);
             height: 400px;
-            // margin: 10px;
             width: 400px;
             h4 {
                 padding: 10px;
+                width: 90%;
+            }
+            p {
+                width: 85%;
             }
             a {
                 padding: 0.7rem 1.3rem;
