@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 import "./layout_styles.css"
 
 const Layout = ({ children }) => {
