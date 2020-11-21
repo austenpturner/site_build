@@ -4,7 +4,7 @@ import FacebookSVG from "../image_files/fbSVG";
 import InstagramSVG from "../image_files/instaSVG";
 import TwitterSVG from "../image_files/twitterSVG";
 import LinkedInSVG from "../image_files/linkedInSVG";
-import "./footer.module.scss";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <ul id="social-links">
+      <ul className={styles.socialLinks}>
         <li>
           <FacebookSVG 
             alt="Facebook symbol"

@@ -21,7 +21,7 @@ footer {
             }
         }
     }
-    #social-links {
+    .socialLinks {
         @include flex (row, center);
         max-width: 400px;
         padding: 10px;
@@ -47,7 +47,7 @@ footer {
             @include flex (row, space-around);
             padding: 30px;
         }
-        #social-links {
+        .socialLinks {
             @include flex (row, center);
             li {
                 margin: 0px;

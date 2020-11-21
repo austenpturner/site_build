@@ -2,7 +2,7 @@
 
 .banner {
     // background: $inscopeBlue;
-    .title-container {
+    .titleContainer {
         padding-top: 23vh;
         min-height: calc(100vh - 100px);
         h1, h2 {
@@ -14,10 +14,17 @@
         h1 {
             color: $inscopeBlue;
         }
-        .btn-container {
+        .btnContainer {
             @include flex (column, center);
             margin: 1.6rem auto;
             max-width: 80%;
+            .linkBtn {
+                border: 2px solid rgba(0,0,0,0);
+                border-radius: 6px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+            }
             a {
                 align-self: center;
                 color: white;
@@ -85,12 +92,12 @@ html:not([data-scroll="0"]) {
 
 @media (min-width: 768px) {
     .banner {
-        .title-container {
+        .titleContainer {
             min-height: calc(100vh - 120px);
             margin: 0 auto;
             max-width: 80%;
             padding-top: 30vh;
-            .btn-container {
+            .btnContainer {
                 @include flex (row, center);
                 margin: 0 auto;
                 a {

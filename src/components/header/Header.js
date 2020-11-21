@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
-import "./header.module.scss";
+import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./header.module.scss";
 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
@@ -32,14 +32,14 @@ function Header() {
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
-        <div id="burger" onClick={handleNavSlide}>
-          <div className={navOpen ? "line toggle1" : "line"} id="line1"></div>
-          <div className={navOpen ? "line toggle2" : "line"} id="line2"></div>
-          <div className={navOpen ? "line toggle3" : "line"} id="line3"></div>
+        <div className={styles.burger} onClick={handleNavSlide}>
+          <div className={navOpen ? toggle1 : burgerLine}></div>
+          <div className={navOpen ? toggle2 : burgerLine}></div>
+          <div className={navOpen ? toggle3 : burgerLine}></div>
         </div>
         </nav>
       </header>
-      <div id="navSlider" className={navOpen ? "slide-down" : "slide-up"}>
+      <div id={styles.navSlider} className={navOpen ? slideDown : slideUp}>
         <ul>
           <li>
             <Link onClick={() => setNavOpen(false)} to="/">Home</Link>

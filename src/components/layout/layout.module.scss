@@ -1,53 +1,13 @@
 @import "../../styles/settings.scss";
-// // ----- IMPORTED FONTS ----- //
-// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
-
-// // ----- SASS VARIABLES ----- //
-// $mediumGrey: rgb(128,128,128);
-// $darkGrey: rgb(90,90,90);
-// $inscopeBlue: rgb(78,103,167);
-// $salmonBerry: rgb(202,65,57);
-// $limeGreen: rgb(49,178,73);
-// $burntYellow: rgb(206,159,6);
-
-// $headerHeight: 70px;
-
-// // ----- SASS MIXINS ----- //
-// @mixin flex ($direction, $justify) {
-//     display: flex;
-//     flex-direction: $direction;
-//     justify-content: $justify;
-// }
-
-// // ----- CSS RESET ----- //
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     // overflow-y: scroll;
-//     padding: 0;
-//     position: relative;
-//     text-size-adjust: 100%;
-// }
-
-// // ----- GLOBAL STYLES ----- //
-// body {
-//     font-family: lato, sans-serif;
-// }
 
 // ----- ELEMENT STYLES ----- //
-.link-btn {
+.linkBtn {
     border: 2px solid rgba(0,0,0,0);
     border-radius: 6px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
 }
-
-// ----- COMPONENT STYLES ----- //
-// @import "../components/header/headerStyles";
-// @import "../components/banner/bannerStyles";
-// @import "../components/section/sectionstyles";
-// @import "../components/footer/footerStyles";
 
 // ----- PAGE STYLES ----- //
 

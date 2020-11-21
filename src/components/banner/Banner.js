@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import "./banner.module.scss";
+import styles from "./banner.module.scss";
 
 const Banner = ({ heading, subHeading, links, list }) => {
   // debounce function & mark scroll event at passive 
@@ -29,14 +29,14 @@ const Banner = ({ heading, subHeading, links, list }) => {
   storeScroll();
 
   return (
-    <div className="banner">
-        <div className="title-container"> 
+    <div className={styles.banner}>
+        <div className={styles.titleContainer}> 
             <h1>{heading}</h1>
             <h2>{subHeading}</h2>
-            <div className="btn-container">
+            <div className={styles.btnContainer}>
               {links.map(({ to, title }) => {
                 return (
-                  <Link key={title} className="link-btn" to={to}>{title}</Link>
+                  <Link key={title} className={styles.linkBtn} to={to}>{title}</Link>
                 )
               })}
             </div>

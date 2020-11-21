@@ -29,29 +29,29 @@ div {
             }
         }
         nav {
-            #burger {
+            .burger {
                 @include flex(column, center);
                 align-self: center;
                 cursor: pointer;
                 margin: 2px;
                 padding: 5px;
-                .line {
+                div {
                     background: white;
                     height: 3px;
-                    margin: 4px;
+                    margin: 2px;
                     transition: all 400ms ease-in-out;
-                    width: 40px;
+                    width: 30px;
                 }
                 -webkit-tap-highlight-color: transparent;
             }
             .toggle1 {
-                transform: rotate(-45deg) translate(-5px, 11px);
+                transform: rotate(-45deg) translate(-3px, 8px);
             }
             .toggle2 {
                 opacity: 0;
             }
             .toggle3 {
-                transform: rotate(45deg) translate(-5px, -11px);
+                transform: rotate(45deg) translate(-3px, -8px);
             }
             ul {
                 display: none;
@@ -105,10 +105,10 @@ div {
             }
         }
     }
-    .slide-up {
+    .slideUp {
         top: -240px - $headerHeight;
     }
-    .slide-down {
+    .slideDown {
         top: $headerHeight;
     }
 }
@@ -125,7 +125,7 @@ div {
     div {
         header {
             nav {
-                #burger {
+                .burger {
                     display: none;
                 }
                 ul {
