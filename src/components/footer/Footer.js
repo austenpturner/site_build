@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby"
+import navItems from "../../content/nav";
 import FacebookSVG from "../image_files/fbSVG";
 import InstagramSVG from "../image_files/instaSVG";
 import TwitterSVG from "../image_files/twitterSVG";
@@ -10,18 +11,13 @@ const Footer = () => {
   return (
     <footer>
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">Company</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        {navItems.map((item, index) => {
+          return (
+            <li key={index}>
+              <Link to={item.link}>{item.title}</Link>
+            </li>
+          )
+        })}
       </ul>
       <ul className={styles.socialLinks}>
         <li>

@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
+import navItems from "../../content/nav";
 import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./header.module.scss";
 
 function Header() {
@@ -19,18 +20,13 @@ function Header() {
         </h1>
         <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">Company</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
+          {navItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link to={item.link}>{item.title}</Link>
+              </li>
+            )
+          })}
         </ul>
         <div className={styles.burger} onClick={handleNavSlide}>
           <div className={navOpen ? toggle1 : burgerLine}></div>
@@ -41,18 +37,13 @@ function Header() {
       </header>
       <div id={styles.navSlider} className={navOpen ? slideDown : slideUp}>
         <ul>
-          <li>
-            <Link onClick={() => setNavOpen(false)} to="/">Home</Link>
-          </li>
-          <li>
-            <Link onClick={() => setNavOpen(false)} to="/about">Company</Link>
-          </li>
-          <li>
-            <Link onClick={() => setNavOpen(false)} to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link onClick={() => setNavOpen(false)} to="/contact">Contact</Link>
-          </li>
+          {navItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link onClick={() => setNavOpen(false)} to={item.link}>{item.title}</Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>
