@@ -1,31 +1,33 @@
 @import "../../styles/config.scss";
 
-div {
+.headerContainer {
+    background: $accentWhite;
+    position: fixed;
+    transition: background 200ms ease-in-out;
+    width: 100%;
+    z-index: 2;
     header {
         @include flex(row, space-between);
         align-items: center;
-        background: $mediumGrey;
-        box-shadow: 0px 2px 6px rgba(60,60,60,0.2);
+        background: $accentWhite;
         font-family: lato, sans-serif;
         height: $headerHeight;
-        margin-bottom: 1.45rem;
-        max-width: 960;
-        padding: 1.45rem 1.0875rem;
-        position: fixed;
-        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px 10px;
         transition: background 200ms ease-in-out;
         width: 100%;
         z-index: 2;
         h1 {
             margin: 0;
             a {
-                color: rgb(255,255,255);
+                color: $inscopeBlue;
                 font-size: 2.25rem;
                 font-weight: bold;
                 line-height: 1.1;
                 margin-left: 2rem;
                 text-decoration: none;
                 text-rendering: optimizeLegibility;
+                transition: color 200ms ease-in-out;
             }
         }
         nav {
@@ -36,7 +38,7 @@ div {
                 margin: 2px;
                 padding: 5px;
                 div {
-                    background: white;
+                    background: $mediumGrey;
                     height: 3px;
                     margin: 2px;
                     transition: all 400ms ease-in-out;
@@ -60,15 +62,15 @@ div {
                 li {
                     margin: auto;
                     a {
-                        border-bottom: solid 2px rgba(255, 255, 255, 0);
-                        color: white;
+                        border-bottom: solid 2px rgba($accentWhite, 0);
+                        color: $mediumGrey;
                         margin: 1.5rem;
                         padding-bottom: 2px;
                         text-decoration: none;
                         text-transform: uppercase;
-                        transition: border 200ms ease-in-out;
+                        transition: border 200ms ease-in-out, color 200ms ease-in-out;
                         &:hover {
-                            border-bottom: solid 2px rgba(255, 255, 255, 1);
+                            border-bottom: solid 2px rgba($mediumGrey, 1);
                         }
                     }
                 }
@@ -76,7 +78,8 @@ div {
         }
     }
     #navSlider {
-        background: $mediumGrey;
+        background: $accentWhite;
+        box-shadow: 0px 2px 6px rgba($shadowGrey,0.2);
         margin: auto;
         position: fixed;
         transition: top 400ms ease-in-out;
@@ -91,15 +94,15 @@ div {
             li {
                 margin: 15px;
                 a {
-                    border-bottom: solid 2px rgba(255, 255, 255, 0);
-                    color: white;
+                    border-bottom: solid 2px rgba($accentWhite, 0);
+                    color: $mediumGrey;
                     margin: 10px;
                     padding-bottom: 2px;
                     text-decoration: none;
                     text-transform: uppercase;
                     transition: border 200ms ease-in-out;
                     &:hover {
-                        border-bottom: solid 2px rgba(255, 255, 255, 1);
+                        border-bottom: solid 2px rgba($mediumGrey, 1);
                     }
                 }
             }
@@ -113,25 +116,35 @@ div {
     }
 }
 
-// html:not([data-scroll="0"]) {
-//     div {
-//         header {
-//             box-shadow: 0px 2px 6px rgba(60,60,60,0.2);
-//         }
-//     }
-// }
+html:not([data-scroll="0"]) {
+    .headerContainer {
+        // background: $mediumGrey;
+        box-shadow: 0px 2px 6px rgba($shadowGrey,0.2);
+        // header {
+        //     background: $mediumGrey;
+        //     h1 a {
+        //         color: $accentWhite;
+        //     }
+        //     nav ul li a {
+        //         color: $accentWhite;
+        //         &:hover {
+        //             border-bottom: solid 2px rgba($accentWhite, 1);
+        //         }
+        //     }
+        // }
+    }
+}
 
 @media only screen and (min-width: 768px) {
-    div {
-        header {
-            nav {
-                .burger {
-                    display: none;
-                }
-                ul {
-                    @include flex(row, center);
-                    align-items: center;
-                }
+    .headerContainer {
+        @include flex(row, center);
+        header nav {
+            .burger {
+                display: none;
+            }
+            ul {
+                @include flex(row, center);
+                align-items: center;
             }
         }
     }

@@ -14,7 +14,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Banner 
-        heading="Close Faster," 
+        heading="Close Faster" 
         subHeading="With Human Centered AI." 
         links={bannerLinks} 
         list={listInfo}

@@ -10,7 +10,7 @@ function Header() {
   };
 
   return (
-    <>
+    <div className={styles.headerContainer}>
       <header>
         <h1>
           <Link to="/">
@@ -55,16 +55,8 @@ function Header() {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   )
-}
+};
 
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-export default Header
+export default Header;
