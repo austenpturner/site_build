@@ -4,6 +4,7 @@ import FacebookSVG from "../image_files/fbSVG";
 import InstagramSVG from "../image_files/instaSVG";
 import TwitterSVG from "../image_files/twitterSVG";
 import LinkedInSVG from "../image_files/linkedInSVG";
+import "./footer.module.scss";
 
 const Footer = () => {
   return (

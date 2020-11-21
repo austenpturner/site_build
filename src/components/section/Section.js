@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Fade from 'react-reveal/Fade';
+import "./section.module.scss";
 
 const Section = ({ imgComponent, num, heading, children, links }) => {
   return (

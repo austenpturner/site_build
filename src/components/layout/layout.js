@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import "./layout_styles.css"
+import "./layout.module.scss";
 
 const Layout = ({ children }) => {
   return (

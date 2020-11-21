@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import "./banner.module.scss";
 
 const Banner = ({ heading, subHeading, links, list }) => {
   // debounce function & mark scroll event at passive 
