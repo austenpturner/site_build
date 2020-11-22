@@ -32,7 +32,7 @@ const indexContent = {
         {
           num: 1,
           heading: "Advanced Lead Generation",
-          content: "",
+          content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
           links: [
             {
               to: "/contact",
@@ -44,7 +44,7 @@ const indexContent = {
         {
           num: 2,
           heading: "Artificial Intelligence",
-          content: "",
+          content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
           links: [
             {
               to: "/about",

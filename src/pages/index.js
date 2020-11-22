@@ -19,8 +19,10 @@ const IndexPage = () => {
       >
       <ChatImg/>
       </Banner>
-      {indexContent.sectionContent.map(props => (
-          <Section key={props.heading} {...props} />
+      {indexContent.sectionContent.map((props, index) => (
+          <Section key={props.heading} {...props}>
+            <p>{indexContent.sectionContent[index].content}</p>
+          </Section>
         )
       )}
     </Layout>

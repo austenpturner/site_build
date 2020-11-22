@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
 import navItems from "../../content/nav";
+// import NameLogo from "../image_files/nameLogo";
 import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./header.module.scss";
 
 function Header() {
@@ -15,6 +16,7 @@ function Header() {
       <header>
         <h1>
           <Link to="/">
+            {/* <NameLogo /> */}
             inscope.ai
           </Link>
         </h1>
