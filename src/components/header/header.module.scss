@@ -3,7 +3,7 @@
 .headerContainer {
     background: $accentWhite;
     position: fixed;
-    transition: background 200ms ease-in-out;
+    // transition: background 200ms ease-in-out;
     width: 100%;
     z-index: 2;
     header {
@@ -12,22 +12,19 @@
         background: $accentWhite;
         font-family: lato, sans-serif;
         height: $headerHeightMobile;
+        margin: 0 auto;
         max-width: 1200px;
         padding: 20px 10px;
-        transition: background 200ms ease-in-out;
+        // transition: background 200ms ease-in-out;
         width: 90%;
         z-index: 2;
         h1 {
             margin: 0;
             a {
                 color: $inscopeBlue;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 line-height: 1.1;
-                margin-left: 2rem;
-                text-decoration: none;
-                text-rendering: optimizeLegibility;
-                transition: color 200ms ease-in-out;
             }
         }
         nav {
@@ -135,7 +132,7 @@ html:not([data-scroll="0"]) {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) and (min-height: 415px) {
     .headerContainer {
         @include flex(row, center);
         header {
@@ -143,8 +140,8 @@ html:not([data-scroll="0"]) {
             padding: 0;
             width: 90%;
             h1 a {
-                font-size: 2.25rem;
-                margin: 0;
+                font-size: 1.8rem;
+                // margin: 0;
             }
             nav {
                 .burger {
@@ -162,5 +159,11 @@ html:not([data-scroll="0"]) {
     }
     .slideDown {
         top: $headerHeight;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headerContainer header {
+        width: 80%;
     }
 }
