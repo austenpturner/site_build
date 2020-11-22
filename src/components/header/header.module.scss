@@ -15,7 +15,7 @@
         max-width: 1200px;
         padding: 20px 10px;
         transition: background 200ms ease-in-out;
-        width: 100%;
+        width: 90%;
         z-index: 2;
         h1 {
             margin: 0;
@@ -138,13 +138,20 @@ html:not([data-scroll="0"]) {
 @media only screen and (min-width: 768px) {
     .headerContainer {
         @include flex(row, center);
-        header nav {
-            .burger {
-                display: none;
+        header {
+            padding: 0;
+            width: 90%;
+            h1 a {
+                margin: 0;
             }
-            ul {
-                @include flex(row, center);
-                align-items: center;
+            nav {
+                .burger {
+                    display: none;
+                }
+                ul {
+                    @include flex(row, center);
+                    align-items: center;
+                }
             }
         }
     }

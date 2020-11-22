@@ -2,6 +2,21 @@ import Image1 from "../components/image_files/image1";
 import Image2 from "../components/image_files/image2";
 
 const indexContent = {
+  bannerContent: {
+    heading: "Close Faster",
+    subheading: "With Human Centered AI.",
+    info: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
+  },
+  bannerLinks: [
+    {
+      to: "/contact",
+      title: "Schedule A Demo"
+    },
+    {
+      to: "/about",
+      title: "About Us"
+    }
+  ],
     listInfo: [
         {
           content: "Get Their Attention"
@@ -12,16 +27,6 @@ const indexContent = {
         {
           content: "Artificial Intelligence"
         },
-    ],
-    bannerLinks: [
-        {
-          to: "/contact",
-          title: "Schedule A Demo"
-        },
-        {
-          to: "/about",
-          title: "About Us"
-        }
     ],
     sectionContent: [
         {
