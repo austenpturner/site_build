@@ -1,95 +1,138 @@
 @import "../../styles/config.scss";
 
 .banner {
-    // background: $inscopeBlue;
     .titleContainer {
-        min-height: calc(100vh - 100px);
-        padding-top: 23vh;
-        h1, h2 {
-            font-size: 3rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
-            color: $inscopeBlue;
-        }
-        .btnContainer {
-            @include flex (column, center);
-            margin: 1.6rem auto;
-            max-width: 80%;
-            .linkBtn {
-                border: 2px solid rgba(0,0,0,0);
-                border-radius: 6px;
-                cursor: pointer;
+        @include flex (column, center);
+        margin: 0 auto;
+        min-height: calc(100vh - 280px);
+        padding-top: 12.6vh;
+        width: 80%;
+        div {
+            h1, h2, p {
+                margin: 0 auto;
                 text-align: center;
-                text-decoration: none;
             }
-            a {
-                align-self: center;
-                color: white;
-                font-size: 1.1rem;
-                height: 3rem;
-                line-height: 2.8rem;
-                margin: 0.8rem;
-                width: 12.4rem;
+            h1, h2 {
+                font-size: 2.2rem;
             }
-            :first-child {
-                background: $salmonBerry;
-                transition: all 200ms ease-in-out;
-                &:hover {
-                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
-                    background: rgb(221, 66, 58);
+            h1 {
+                color: $inscopeBlue;
+            }
+            p {
+                color: $mediumGrey;
+                font-size: 0.9rem;
+                font-weight: bold;
+                line-height: 1.3rem;
+                margin: 12px 0;
+            }
+            .btnContainer {
+                @include flex (row, center);
+                margin: 0 auto;
+                .linkBtn {
+                    border: 2px solid rgba(0,0,0,0);
+                    border-radius: 6px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    min-width: 130px;
+                }
+                a {
+                    align-self: center;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    line-height: 2.4rem;
+                    margin: 8px 5px;
+                }
+                :first-child {
+                    background: $salmonBerry;
+                    transition: all 200ms ease-in-out;
+                    &:hover {
+                        box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                        background: rgb(221, 66, 58);
+                    }
+                }
+                :last-child {
+                    background: $mediumGrey;
+                    transition: all 200ms ease-in-out;
+                    &:hover {
+                        box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                        background: rgb(133, 133, 133);
+                    }
                 }
             }
-            :last-child {
-                background: $mediumGrey;
-                transition: all 200ms ease-in-out;
-                &:hover {
-                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
-                    background: rgb(133, 133, 133);
-                }
+        }
+        .img {
+            margin: 10px 0;
+            width: 100%;
+            img {
+            width: 90%;
             }
         }
     }
     ul {
         @include flex (column, space-around);
         background: $inscopeBlue;
-        height: 270px;
+        height: 200px;
         list-style: none;
-        margin: 0 auto 20px;
+        margin: 0 auto 50px;
         transition: background 150ms ease-in-out;
         li {
-            color: rgb(255,255,255);
-            font-size: 1.1rem;
-            margin: 20px auto;
-            min-width: 200px;
-            transition: color 150ms ease-in-out;
+            color: $accentWhite;
+            font-size: 1rem;
+            margin: 0 auto;
+            min-width: 180px;
             width: 40%;
             :first-child {
-                color: rgb(255,255,255);
-                font-size: 1.2rem;
+                color: $accentWhite;
+                font-size: 1.1rem;
                 margin-right: 0.5rem;
-                transition: color 150ms ease-in-out;
             }
         }
     }
 }
 
-// html:not([data-scroll="0"]) {
-//     .banner {
-//         ul {
-//             background: rgb(255,255,255);
-//             li {
-//                 color: $inscopeBlue;
-//                 :first-child {
-//                     color: $inscopeBlue;
-//                 }
-//             }
-//         }
-//     }
-// }
+@media (min-width: 568px) {
+    .banner .titleContainer div .btnContainer {
+        @include flex (column, center);
+        margin: 1.6rem auto;
+        max-width: 80%;
+        .linkBtn {
+            border: 2px solid rgba(0,0,0,0);
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        a {
+            align-self: center;
+            color: white;
+            font-size: 1.1rem;
+            height: 3rem;
+            line-height: 2.8rem;
+            margin: 0.8rem;
+            width: 12.4rem;
+        }
+        :first-child {
+            background: $salmonBerry;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                background: rgb(221, 66, 58);
+            }
+        }
+        :last-child {
+            background: $mediumGrey;
+            transition: all 200ms ease-in-out;
+            &:hover {
+                box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                background: rgb(133, 133, 133);
+            }
+        }
+    }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .banner {
         margin-bottom: 80px;
         .titleContainer {
@@ -102,34 +145,39 @@
             width: 90%;
             div {
                 align-self: center;
+                width: 60%;
                 h1, h2 {
+                    font-size: 2.6rem;
+                    margin: 0;
                     text-align: left;
+                    width: 80%;
                 }
                 p {
-                    color: $mediumGrey;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    line-height: 2rem;
-                    margin: 20px 0;
-                    width: 50%;
+                    font-size: 1.1rem;
+                    line-height: 1.8rem;
+                    margin: 12px 0;
+                    text-align: left;
+                    width: 90%;
                 }
                 .btnContainer {
                     @include flex (row, flex-start);
                     margin: 0;
+                    .linkBtn {
+                        min-width: 140px;
+                    }
                     a {
-                        font-size: 1rem;
+                        font-size: 0.95rem;
                         height: 2.7rem;
                         line-height: 2.4rem;
-                        margin: 20px 20px 0 0;
-                        width: 10.2rem;
+                        margin: 8px 20px 0 0;
                     }
                 }
             }
             .img img {
-                max-width: 560px;
                 position: absolute;
                 right: 0px;
-                top: -150px;
+                top: -130px;
+                width: 400px;
             }
         }
         ul {
@@ -144,6 +192,42 @@
                 text-align: center;
                 width: 33.3%;
             }
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    .banner .titleContainer .img img {
+        width: 460px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .banner .titleContainer {
+        div {
+            p {
+                margin: 20px 0;
+            }
+            .btnContainer a {
+                margin: 20px 20px 0 0;
+            }
+        }
+        .img img {
+            top: -150px;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+    .banner .titleContainer {
+        div {
+            h1, h2 {
+                font-size: 2.8rem;
+                width: 100%;
+            }
+        }
+        .img img {
+            width: 600px;
         }
     }
 }

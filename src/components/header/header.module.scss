@@ -11,7 +11,7 @@
         align-items: center;
         background: $accentWhite;
         font-family: lato, sans-serif;
-        height: $headerHeight;
+        height: $headerHeightMobile;
         max-width: 1200px;
         padding: 20px 10px;
         transition: background 200ms ease-in-out;
@@ -21,7 +21,7 @@
             margin: 0;
             a {
                 color: $inscopeBlue;
-                font-size: 2.25rem;
+                font-size: 1.6rem;
                 font-weight: bold;
                 line-height: 1.1;
                 margin-left: 2rem;
@@ -109,10 +109,10 @@
         }
     }
     .slideUp {
-        top: -240px - $headerHeight;
+        top: -240px - $headerHeightMobile;
     }
     .slideDown {
-        top: $headerHeight;
+        top: $headerHeightMobile;
     }
 }
 
@@ -139,9 +139,11 @@ html:not([data-scroll="0"]) {
     .headerContainer {
         @include flex(row, center);
         header {
+            height: $headerHeight;
             padding: 0;
             width: 90%;
             h1 a {
+                font-size: 2.25rem;
                 margin: 0;
             }
             nav {
@@ -154,5 +156,11 @@ html:not([data-scroll="0"]) {
                 }
             }
         }
+    }
+    .slideUp {
+        top: -240px - $headerHeight;
+    }
+    .slideDown {
+        top: $headerHeight;
     }
 }
