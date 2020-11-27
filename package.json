@@ -1,7 +1,7 @@
 {
-  "name": "inscope-website-build",
+  "name": "inscope.ai",
   "private": true,
-  "description": "Website for Inscope.ai",
+  "description": "Inscope.ai Website",
   "version": "0.1.0",
   "author": "Austen Turner",
   "dependencies": {
@@ -26,6 +26,7 @@
     "sass-loader": "^10.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.1.2"
   },
   "keywords": [
@@ -39,11 +40,12 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/austenpturner"
+    "url": "https://github.com/austenpturner/site_build"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

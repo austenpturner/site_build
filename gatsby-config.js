@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Inscope.ai`,
-    description: `Close faster with human centered AI.`,
+    description: `Close Faster With Human Centered AI.`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -31,4 +31,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: `/site_build`,
 }

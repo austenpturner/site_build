@@ -18,7 +18,7 @@ const ChatImg = () => {
     return <div>Picture not found</div>
   };
 
-  return <img src={data.file.childImageSharp.fluid.src} aria-hidden={true}/>
+  return <img src={data.file.childImageSharp.fluid.src} alt="product image" aria-hidden={true}/>
 };
 
 export default ChatImg;
