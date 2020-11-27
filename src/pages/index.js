@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import Banner from "../components/banner/Banner";
 import Section from "../components/section/Section";
 import indexContent from "../content/index";
-import ChatImg from "../components/image_files/chatImage";
+import ProductImg from "../components/image_files/productImg";
 
 const IndexPage = () => {
   return (
@@ -17,7 +17,7 @@ const IndexPage = () => {
         links={indexContent.bannerLinks} 
         list={indexContent.listInfo}
       >
-      <ChatImg/>
+      <ProductImg/>
       </Banner>
       {indexContent.sectionContent.map((props, index) => (
           <Section key={props.heading} {...props}>
