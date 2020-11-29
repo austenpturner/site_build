@@ -10,11 +10,53 @@
 }
 
 // ----- PAGE STYLES ----- //
+.teamSection {
+  // background-color: rgb(228, 228, 228);
+  margin: 0 auto;
+  padding: 0px 0 40px;
+  h1, .teamContainer {
+    max-width: 800px;
+    width: 90%;
+  }
+  h1 {
+    color: $inscopeBlue;
+    font-size: 2rem;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .teamContainer {
+    @include flex (row, space-around);
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
 
-
-// ----- MEDIA QUERIES ----- //
-@media only screen and (max-width: 480px) {
-    html {
-      font-size: 100%;
+@media (max-height: 480px) {
+  .teamSection {
+    .teamContainer {
+      justify-content: space-between;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .teamSection {
+    margin: 80px auto 0px;
+    padding: 20px 0 80px;
+    h1 {
+      font-size: 2.2rem;
+      margin: 20px auto 30px;
+    }
+    .teamContainer {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .teamSection {
+    h1, .teamContainer {
+      max-width: 80%;
+    }
+  }
 }
