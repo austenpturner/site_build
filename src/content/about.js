@@ -75,7 +75,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/therightresource/",
                     },
                 ],
             },
@@ -89,7 +89,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/eskinnermusic/",
                     },
                 ],
             },
@@ -103,7 +103,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/buryhuang411/",
                     },
                 ],
             },
@@ -116,7 +116,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/molly-long/",
                     },
                 ],
             },
@@ -129,7 +129,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/xavier-king/",
                     },
                 ],
             },
@@ -142,7 +142,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/dustinguyjackson/",
                     },
                 ],
             },
@@ -155,7 +155,7 @@ const aboutContent = {
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
+                        link: "https://www.linkedin.com/in/austenpturner/",
                     },
                 ],
             },

@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+// import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import LinkedInColorSVG from "../components/image_files/linkedInColor";
 import styles from "../components/layout/layout.module.scss";
@@ -19,12 +19,6 @@ const Contact = () => (
           <p>Send us a message or find us on LinkedIn to learn more.</p>
         </div>
         <div className={styles.contactContainer}>
-          {/* <div className={styles.address}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.socialIcon} />
-            <h3>Address</h3>
-            <p>We are based in Seattle, WA</p>
-            <p>123 street name suite 101, Seattle WA 98104</p>
-          </div> */}
           <div className={styles.email}>
             <FontAwesomeIcon icon={faEnvelope} />
             <h3>Email</h3>

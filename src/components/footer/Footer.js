@@ -20,17 +20,17 @@ const Footer = () => {
       </ul>
       <ul className={styles.socialLinks}>
         <li>
-          <Link to="" target="_blank">
+          <Link to="https://www.facebook.com/inscope/" target="_blank">
             <FacebookSVG alt="Facebook symbol"/>
           </Link>
         </li>
         <li>
-          <Link to="" target="_blank">
+          <Link to="https://www.linkedin.com/company/inscope-ai/" target="_blank">
             <LinkedInSVG alt="LinkedIn symbol"/>
           </Link>
         </li>
         <li>
-          <Link to="" target="_blank">
+          <Link to="https://www.instagram.com/inscope.ai/" target="_blank">
             <InstagramSVG alt="Instagram symbol"/>
           </Link>
         </li>
