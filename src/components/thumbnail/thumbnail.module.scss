@@ -7,7 +7,7 @@
         margin: 0 auto 12px;
         width: 150px;
     }
-    h4, h3 {
+    h3 {
         margin: 1px auto;
     }
     h4 {
@@ -35,10 +35,7 @@
     .thumbnail {
         margin-right: 6.25%;
         width: 25%;
-        img {
-            width: 170px;
-        }
-        h4 {
+        img, h4 {
             width: 170px;
         }
         &:nth-child(3n+5), &:nth-child(2n+2) {
@@ -55,10 +52,7 @@
 
 @media (min-width: 1024px) {
     .thumbnail {
-        img {
-            width: 190px;
-        }
-        h4 {
+        img, h4 {
             width: 190px;
         }
     }

@@ -1,35 +1,30 @@
 @import "../../styles/config.scss";
 
 footer {
+    @include flex (column, space-around);
     background: $inscopeBlue;
     color: white;
     height: $footerHeightMobile;
     padding: 10px;
     width: 100%;
     ul {
-        @include flex (row, space-around);
-        margin: 0px auto;
+        @include flex (row, center);
+        margin: 0 auto;
         max-width: 600px;
-        padding: 10px 30px 10px 10vw;
         li {
             cursor: pointer;
             font-size: 0.9rem;
             list-style: none;
-            margin: 10px;
+            margin: 0 30px;
             a {
                 color: white;
-                text-decoration: none;
             }
         }
     }
     .socialLinks {
-        @include flex (row, center);
         max-width: 400px;
-        padding: 10px;
-        width: 60%;
         li {
-            margin: 0 auto;
-            padding: 10px;
+            margin: 0 20px;
             img {
                 width: 20px;
             }
@@ -38,7 +33,6 @@ footer {
     p {
         color: $accentWhite;
         font-size: 0.9rem;
-        margin: 10px auto;
         text-align: center;
     }
 }
@@ -47,14 +41,13 @@ footer {
     footer {
         height: $footerHeight;
         ul {
-            @include flex (row, space-around);
-            padding: 30px;
+            li {
+                margin: 0 50px;
+            }
         }
         .socialLinks {
-            @include flex (row, center);
             li {
-                margin: 0px;
-                padding: 0.8rem 1.8rem;
+                margin: 0 30px;
             }
         }
     }

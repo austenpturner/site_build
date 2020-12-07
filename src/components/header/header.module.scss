@@ -3,7 +3,6 @@
 .headerContainer {
     background: $accentWhite;
     position: fixed;
-    // transition: background 200ms ease-in-out;
     width: 100%;
     z-index: 2;
     header {
@@ -15,7 +14,6 @@
         margin: 0 auto;
         max-width: 1200px;
         padding: 20px 10px;
-        // transition: background 200ms ease-in-out;
         width: 90%;
         z-index: 2;
         h1 {
@@ -120,20 +118,7 @@
 
 html:not([data-scroll="0"]) {
     .headerContainer {
-        // background: $mediumGrey;
         box-shadow: 0px 2px 6px rgba($shadowGrey,0.2);
-        // header {
-        //     background: $mediumGrey;
-        //     h1 a {
-        //         color: $accentWhite;
-        //     }
-        //     nav ul li a {
-        //         color: $accentWhite;
-        //         &:hover {
-        //             border-bottom: solid 2px rgba($accentWhite, 1);
-        //         }
-        //     }
-        // }
     }
 }
 

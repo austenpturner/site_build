@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import navItems from "../../content/nav";
 import FacebookSVG from "../image_files/fbSVG";
 import InstagramSVG from "../image_files/instaSVG";
-// import TwitterSVG from "../image_files/twitterSVG";
 import LinkedInSVG from "../image_files/linkedInSVG";
 import styles from "./footer.module.scss";
 
@@ -21,25 +20,20 @@ const Footer = () => {
       </ul>
       <ul className={styles.socialLinks}>
         <li>
-          <FacebookSVG 
-            alt="Facebook symbol"
-          />
+          <Link to="" target="_blank">
+            <FacebookSVG alt="Facebook symbol"/>
+          </Link>
         </li>
         <li>
-          <LinkedInSVG 
-            alt="LinkedIn symbol"
-          />
+          <Link to="" target="_blank">
+            <LinkedInSVG alt="LinkedIn symbol"/>
+          </Link>
         </li>
         <li>
-          <InstagramSVG 
-            alt="Instagram symbol"
-          />
+          <Link to="" target="_blank">
+            <InstagramSVG alt="Instagram symbol"/>
+          </Link>
         </li>
-        {/* <li>
-          <TwitterSVG 
-            alt="Twitter symbol"
-          />
-        </li> */}
       </ul>
       <p>&copy; 2020 Inscope.ai</p>
     </footer>
