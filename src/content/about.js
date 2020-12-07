@@ -1,11 +1,13 @@
 import Image3 from "../components/image_files/image3";
 import Image4 from "../components/image_files/image4";
-import FacebookColorSVG from "../components/image_files/facebookColor";
 import LinkedInColorSVG from "../components/image_files/linkedInColor";
-import InstagramColorSVG from "../components/image_files/instagramColor";
-import FacebookSVG from "../components/image_files/fbSVG";
-import LinkedInSVG from "../components/image_files/linkedInSVG";
-import InstagramSVG from "../components/image_files/instaSVG";
+import DustinJacksonImage from "../components/image_files/dustinJackson";
+import BuryHuangImage from "../components/image_files/buryHuang";
+import MollyLongImage from "../components/image_files/mollyLong";
+import EliotSkinnerImage from "../components/image_files/eliotSkinner";
+import MichaelSkinnerImage from "../components/image_files/michaelSkinner";
+import XavierKingImage from "../components/image_files/xavierKing";
+import AustenTurnerImage from "../components/image_files/austenTurner";
 
 const aboutContent = {
     bannerContent: {
@@ -15,12 +17,12 @@ const aboutContent = {
     },
     bannerLinks: [
         {
-            "to": "/contact",
-            "title": "Schedule A Demo"
+            "to": "/",
+            "title": "Learn More"
         },
         {
             "to": "/contact",
-            "title": "Contact Us"
+            "title": "Get In Touch"
         }
     ],
     listInfo: [
@@ -64,77 +66,95 @@ const aboutContent = {
         header: "Our Team",
         teamMemebers: [
             {
-                imgComponent: Image4,
-                name: "Mary Poppins",
-                title: "Software Engineer",
+                imgComponent: MichaelSkinnerImage,
+                name: "Michael Skinner",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: FacebookColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: InstagramColorSVG,
                         link: "",
                     },
                 ],
             },
             {
-                imgComponent: Image4,
-                name: "Mary Poppins",
-                title: "Software Engineer",
+                imgComponent: EliotSkinnerImage,
+                name: "Eliot Skinner",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: FacebookColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: InstagramColorSVG,
                         link: "",
                     },
                 ],
             },
             {
-                imgComponent: Image4,
-                name: "Mary Poppins",
-                title: "Software Engineer",
+                imgComponent: BuryHuangImage,
+                name: "Bury Huang",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: FacebookColorSVG,
-                        link: "",
-                    },
-                    {
-                        imgComponent: InstagramColorSVG,
                         link: "",
                     },
                 ],
             },
             {
-                imgComponent: Image4,
-                name: "Mary Poppins",
-                title: "Software Engineer",
+                imgComponent: MollyLongImage,
+                name: "Molly Long",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
                 socialLinks: [
                     {
                         imgComponent: LinkedInColorSVG,
                         link: "",
                     },
+                ],
+            },
+            {
+                imgComponent: XavierKingImage,
+                name: "Xavier King",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
                     {
-                        imgComponent: FacebookColorSVG,
+                        imgComponent: LinkedInColorSVG,
                         link: "",
                     },
+                ],
+            },
+            {
+                imgComponent: DustinJacksonImage,
+                name: "Dustin Jackson",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
                     {
-                        imgComponent: InstagramColorSVG,
+                        imgComponent: LinkedInColorSVG,
+                        link: "",
+                    },
+                ],
+            },
+            {
+                imgComponent: AustenTurnerImage,
+                name: "Austen Turner",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
                         link: "",
                     },
                 ],

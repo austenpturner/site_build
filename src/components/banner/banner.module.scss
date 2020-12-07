@@ -72,7 +72,7 @@
         @include flex (column, space-around);
         background: $inscopeBlue;
         height: $bannerUlHeightMobile;
-        margin: 0 auto 50px;
+        margin: 0 auto;
         padding-top: 35px;
         li {
             @include flex (row, center);
@@ -206,7 +206,7 @@
 
 @media (min-width: 769px) and (min-height: 415px) {
     .banner {
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         .titleContainer {
             @include flex (row, space-between);
             margin: 0 auto;

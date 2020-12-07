@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import Banner from "../components/banner/Banner";
-import Section from "../components/section/Section";
+// import Block from "../components/blocks/Blocks";
 import Thumbnail from "../components/thumbnail/thumbnail";
 import aboutContent from "../content/about";
 import styles from "../components/layout/layout.module.scss";
@@ -17,13 +17,13 @@ const About = () => (
       links={aboutContent.bannerLinks} 
       list={aboutContent.listInfo} 
     />
-    {aboutContent.sectionContent.map((props, index) => {
+    {/* {aboutContent.sectionContent.map((props, index) => {
       return (
-        <Section key={index} {...props} >
+        <Block key={index} {...props} >
           <p>{aboutContent.sectionContent[index].content}</p>
-        </Section>
+        </Block>
       )
-    })}
+    })} */}
     <div className={styles.teamSection}>
       <h1>{aboutContent.teamContent.header}</h1>
       <div className={styles.teamContainer}>

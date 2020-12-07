@@ -3,7 +3,8 @@
 footer {
     background: $inscopeBlue;
     color: white;
-    padding: 20px;
+    height: $footerHeightMobile;
+    padding: 10px;
     width: 100%;
     ul {
         @include flex (row, space-around);
@@ -35,6 +36,7 @@ footer {
         }
     }
     p {
+        color: $accentWhite;
         font-size: 0.9rem;
         margin: 10px auto;
         text-align: center;
@@ -43,6 +45,7 @@ footer {
 
 @media (min-width: 768px) {
     footer {
+        height: $footerHeight;
         ul {
             @include flex (row, space-around);
             padding: 30px;

@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
 import Fade from 'react-reveal/Fade';
-import styles from "./section.module.scss";
+import styles from "./block.module.scss";
 
-const Section = ({ imgComponent, num, heading, children, links }) => {
+const Section = ({ imgComponent, heading, children, links }) => {
   return (
-    <div className={styles.section}>
+    <div className={styles.block}>
         <div className={styles.imgContainer}>
           {React.createElement(imgComponent)}
         </div>
-        <Fade right={num % 2 !== 0 ? true : false} left={num % 2 === 0 ? true : false}>
+        <Fade>
             <div className={styles.contentContainer}>
                 <h4>{heading}</h4>
                 {children}

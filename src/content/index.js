@@ -1,5 +1,5 @@
 import Image1 from "../components/image_files/image1";
-import Image2 from "../components/image_files/image2";
+import Image3 from "../components/image_files/image3";
 
 const indexContent = {
   bannerContent: {
@@ -9,13 +9,13 @@ const indexContent = {
   },
   bannerLinks: [
     {
-      to: "/contact",
-      title: "Schedule A Demo"
-    },
-    {
       to: "/about",
       title: "About Us"
-    }
+    },
+    {
+      to: "/contact",
+      title: "Get In Touch"
+    },
   ],
     listInfo: [
         {
@@ -34,10 +34,10 @@ const indexContent = {
           heading: "Advanced Lead Generation",
           content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
           links: [
-            {
-              to: "/contact",
-              title: "Schedule A Demo"
-            }
+            // {
+            //   to: "/contact",
+            //   title: "Schedule A Demo"
+            // },
           ],
           imgComponent: Image1,
         },
@@ -46,12 +46,12 @@ const indexContent = {
           heading: "Artificial Intelligence",
           content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
           links: [
-            {
-              to: "/about",
-              title: "Learn More"
-            }
+            // {
+            //   to: "/about",
+            //   title: "Learn More"
+            // },
           ],
-          imgComponent: Image2,
+          imgComponent: Image3,
         },
     ]
 };

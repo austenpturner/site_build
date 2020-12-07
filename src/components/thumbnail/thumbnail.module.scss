@@ -1,8 +1,8 @@
 @import "../../styles/config.scss";
 
 .thumbnail {
-    @include flex (column, center);
-    margin: 20px 0 30px;
+    @include flex (column, start);
+    margin: 20px 0;
     img {
         margin: 0 auto 12px;
         width: 150px;
@@ -11,7 +11,11 @@
         margin: 1px auto;
     }
     h4 {
+        font-size: 0.95rem;
         font-weight: normal;
+        margin: 2px auto;
+        text-align: center;
+        width: 150px;
     }
     .socialIcons {
         @include flex (row, center);
@@ -34,6 +38,9 @@
         img {
             width: 170px;
         }
+        h4 {
+            width: 170px;
+        }
         &:nth-child(3n+5), &:nth-child(2n+2) {
             margin: 20px 6.25% 30px;
         }
@@ -49,6 +56,9 @@
 @media (min-width: 1024px) {
     .thumbnail {
         img {
+            width: 190px;
+        }
+        h4 {
             width: 190px;
         }
     }

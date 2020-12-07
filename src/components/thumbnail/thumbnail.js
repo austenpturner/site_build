@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "gatsby";
 import styles from "./thumbnail.module.scss";
 
-const Thumbnail = ({ imgComponent, name, title, socialLinks }) => {
+const Thumbnail = ({ imgComponent, name, titles, socialLinks }) => {
   return (
     <div className={styles.thumbnail}>
         {React.createElement(imgComponent)}
         <h3>{name}</h3>
-        <h4>{title}</h4>
+        {titles.map((title, index) => {
+            return (
+                <h4 key={index}>{title}</h4>
+            )
+        })}
         <div className={styles.socialIcons}>
             {socialLinks.map(({imgComponent, link}, index) => {
                 return (
