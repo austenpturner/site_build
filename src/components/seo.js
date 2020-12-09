@@ -41,7 +41,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `Inscope`,
+        },
+        {
+          property: `og:image`,
+          content: `https://austenpturner.github.io/site_build/static/c7d133c4324bad9166f91ab741db632a/ee604/product-img.png`,
         },
         {
           property: `og:description`,
