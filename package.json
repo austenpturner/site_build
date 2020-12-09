@@ -36,18 +36,20 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/austenpturner/site_build"
+    "url": "git+https://github.com/austenpturner/site_build"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/austenpturner/site_build/issues"
+  },
+  "homepage": "https://github.com/austenpturner/site_build#readme",
+  "main": "gatsby-browser.js"
 }
