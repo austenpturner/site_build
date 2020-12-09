@@ -13,7 +13,7 @@ const aboutContent = {
     bannerContent: {
         heading: "Deeply Commited",
         subheading: "We Are Driven By Values",
-        info: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
+        info: "Inscope is an intelligent video messaging platform designed by sales people, for sales people. Inscope gives you the tools you need to create engaging content to send to prospects, customers and clients, as well as the artificial intelligence to help you strategize how to best use it. Inscope helps you humanize every aspect of your sales cycle, helping you work more efficiently and ideally close more business.",
     },
     bannerLinks: [
         {

@@ -31,8 +31,8 @@ const indexContent = {
     sectionContent: [
         {
           num: 1,
-          heading: "Advanced Lead Generation",
-          content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
+          heading: "Artificial Intelligence",
+          content: "Leverage artificial intelligence to maximize your sales effectiveness. Inscope uses advanced AI to help with useful metrics and targeted marketing based on actual real world responses.",
           links: [
             // {
             //   to: "/contact",
@@ -43,8 +43,8 @@ const indexContent = {
         },
         {
           num: 2,
-          heading: "Artificial Intelligence",
-          content: "Inscope is a powerful sales and recruiting platform that combines messaging with human centered artificial intelligence while seamlessly integrating with your CRM or applicant tracking system.",
+          heading: "Sell it With Video",
+          content: "Inscope gives you the ability to send video messages to your prospects easier and more efficiently than ever.",
           links: [
             // {
             //   to: "/about",

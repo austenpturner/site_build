@@ -6,9 +6,11 @@ import styles from "./block.module.scss";
 const Section = ({ imgComponent, heading, children, links }) => {
   return (
     <div className={styles.block}>
+        <Fade>
         <div className={styles.imgContainer}>
           {React.createElement(imgComponent)}
         </div>
+        </Fade>
         <Fade>
             <div className={styles.contentContainer}>
                 <h4>{heading}</h4>
