@@ -1,5 +1,5 @@
 import { Link } from "gatsby";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import navItems from "../../content/nav";
 // import NameLogo from "../image_files/nameLogo";
 import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./header.module.scss";
