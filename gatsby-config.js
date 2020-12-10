@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: `/site_build`,
   siteMetadata: {
     title: `Inscope.ai`,
-    description: `Close Faster With Human Centered AI.`,
+    description: `Close Faster With Human Centered AI`,
     image: `https://austenpturner.github.io/site_build/static/c7d133c4324bad9166f91ab741db632a/ee604/product-img.png`,
   },
   plugins: [
@@ -32,5 +33,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  pathPrefix: `/site_build`,
 }

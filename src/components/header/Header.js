@@ -7,6 +7,31 @@ import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from 
 function Header() {
   const [navOpen, setNavOpen] = useState(false);
 
+  // debounce function & mark scroll event at passive 
+  // creates smooth CSS transition on page scroll
+  // source: https://css-tricks.com/styling-based-on-scroll-position/
+  useEffect(() => {
+    const debounce = (fn) => {
+      let frame;
+      return (...params) => {
+        if (frame) { 
+          cancelAnimationFrame(frame);
+        };
+        frame = requestAnimationFrame(() => {
+          fn(...params);
+        });
+      } 
+    };
+
+    const storeScroll = () => {
+      document.documentElement.dataset.scroll = window.scrollY;
+    };
+
+    document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+
+    storeScroll();
+  }, []);
+
   function handleNavSlide() {
     setNavOpen(!navOpen);
   };

@@ -36,12 +36,12 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
           property: `title`,
           content: `Inscope`,
+        },
+        {
+          name: `description`,
+          content: metaDescription,
         },
         {
           property: `image`,
@@ -52,12 +52,12 @@ function SEO({ description, lang, meta, title }) {
           content: `Inscope`,
         },
         {
-          property: `og:image`,
-          content: `https://austenpturner.github.io/site_build/static/c7d133c4324bad9166f91ab741db632a/ee604/product-img.png`,
-        },
-        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `https://austenpturner.github.io/site_build/static/c7d133c4324bad9166f91ab741db632a/ee604/product-img.png`,
         },
         {
           property: `og:type`,
@@ -67,13 +67,9 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:card`,
           content: `summary`,
         },
-        // {
-        //   name: `twitter:creator`,
-        //   content: site.siteMetadata?.author || ``,
-        // },
         {
           name: `twitter:title`,
-          content: title,
+          content: `Inscope`,
         },
         {
           name: `twitter:description`,
