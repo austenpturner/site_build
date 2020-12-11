@@ -24,10 +24,10 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 line-height: 1.1;
-                img {
-                    margin-left: -25px;
-                    width: 180px;
-                }
+                // img {
+                //     margin-left: -25px;
+                //     width: 180px;
+                // }
             }
         }
         nav {
@@ -59,6 +59,7 @@
                 display: none;
                 list-style: none;
                 margin: auto;
+                // margin-left: -1.5rem;
                 li {
                     margin: auto;
                     a {
@@ -73,6 +74,9 @@
                             border-bottom: solid 2px rgba($mediumGrey, 1);
                         }
                     }
+                }
+                li:last-child {
+                    margin-right: -1.5rem;
                 }
             }
         }
@@ -127,14 +131,16 @@ html:not([data-scroll="0"]) {
         @include flex(row, center);
         header {
             height: $headerHeight;
+            max-width: 800px;
             padding: 0;
             width: 90%;
             h1 a {
                 font-size: 1.8rem;
-                img {
-                    margin-left: -32px;
-                    width: 220px;
-                }
+                // margin-left: 1.5rem;
+                // img {
+                //     margin-left: -32px;
+                //     width: 220px;
+                // }
             }
             nav {
                 .burger {
@@ -157,6 +163,7 @@ html:not([data-scroll="0"]) {
 
 @media (min-width: 1024px) {
     .headerContainer header {
+        max-width: 1200px;
         width: 80%;
     }
 }

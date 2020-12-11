@@ -55,11 +55,11 @@ function Header() {
             )
           })}
         </ul>
-        <button className={styles.burger} onClick={handleNavSlide} onKeyDown={handleNavSlide}>
+        <div className={styles.burger} onClick={handleNavSlide}>
           <div className={navOpen ? toggle1 : burgerLine}></div>
           <div className={navOpen ? toggle2 : burgerLine}></div>
           <div className={navOpen ? toggle3 : burgerLine}></div>
-        </button>
+        </div>
         </nav>
       </header>
       <div id={styles.navSlider} className={navOpen ? slideDown : slideUp}>
