@@ -18,7 +18,7 @@ const Image1 = () => {
     return <div>Picture not found</div>
   };
 
-  return <img src={data.file.childImageSharp.fluid.src} aria-hidden={true}/>
+  return <img src={data.file.childImageSharp.fluid.src} alt=""/>
 };
 
 export default Image1;

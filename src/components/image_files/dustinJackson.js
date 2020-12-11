@@ -14,7 +14,7 @@ const DustinJacksonImage = () => {
     	return <div>Picture not found</div>
   	};
 
-  	return <img src={data.file.publicURL} />
+  	return <img src={data.file.publicURL} alt="Team Member"/>
 };
 
 export default DustinJacksonImage;

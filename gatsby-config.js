@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/site_build`,
   siteMetadata: {
     title: `Inscope.ai`,
     description: `Close Faster With Human Centered AI`,
@@ -33,4 +32,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: `/site_build`,
 }

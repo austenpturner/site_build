@@ -18,7 +18,7 @@ const Image3 = () => {
     return <div>Picture not found</div>
   };
 
-  return <img src={data.file.childImageSharp.fluid.src} />
+  return <img src={data.file.childImageSharp.fluid.src} alt=""/>
 };
 
 export default Image3;

@@ -23,7 +23,9 @@ const Contact = () => (
             <FontAwesomeIcon icon={faEnvelope} />
             <h3>Email</h3>
             <p>Send us a message</p>
-            <p>admin@inscope.ai</p>
+            <Link href="mailto:admin@inscope.ai" target="_blank">
+              admin@inscope.ai
+            </Link>
           </div>
           <div className={styles.socialMedia}>
             <FontAwesomeIcon icon={faThumbsUp} />

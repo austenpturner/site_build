@@ -39,7 +39,6 @@
   min-height: calc(100vh - 200px);
   width: 80%;
   .headerContainer {
-    // min-height: calc(50vh - 160px);
     h1, h2, p {
       margin: 5px auto;
       text-align: center;
@@ -51,20 +50,15 @@
   .contactContainer {
     @include flex (column, center);
     align-items: center;
-    // background: $lightGrey;
     margin: 15px auto;
-    // min-height: calc(50vh - 160px);
-    // padding: 40px 0;
     div {
       @include flex(column, space-evenly);
       background: $accentWhite;
       border-radius: 5px;
       box-shadow: -3px 3px 8px rgba($mediumGrey,0.8);
-      // height: 220px;
       margin: 15px auto;
       padding: 10px;
       text-align: center;
-      // width: 23.33%;
       width: 80%;
       :first-child {
         color: $inscopeBlue;
@@ -78,9 +72,9 @@
       p {
         margin: 5px auto;
         width: 100%;
-        &:last-child {
-          color: $inscopeBlue;
-        }
+      }
+      a {
+        color: $inscopeBlue;
       }
       a img {
         width: 30px;
@@ -124,6 +118,7 @@
 
   .teamSection {
     margin: 50px auto;
+    width: 100%;
     h1 {
       font-size: 2.2rem;
       margin: 20px auto 30px;
@@ -151,10 +146,11 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .teamSection {
     h1, .teamContainer {
-      max-width: 80%;
+      max-width: 1200px;
+      width: 80%;
     }
   }
 }
