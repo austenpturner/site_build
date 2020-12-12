@@ -1,11 +1,8 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import contactContent from "../content/contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import LinkedInColorSVG from "../components/image_files/linkedInColor";
 import styles from "../components/layout/layout.module.scss";
 
 const Contact = () => (
@@ -13,27 +10,23 @@ const Contact = () => (
     <SEO title="About" />
       <section className={styles.contactSection}>
         <div className={styles.headerContainer}>
-          <h1>Get In Touch</h1>
-          <h2>Let's Connect!</h2>
-          <p>Send us a message or find us on LinkedIn to learn more.</p>
+          <h1>{contactContent.heading}</h1>
+          <h2>{contactContent.subheading}</h2>
+          <p>{contactContent.info}</p>
         </div>
         <div className={styles.contactContainer}>
-          <div className={styles.email}>
-            <FontAwesomeIcon icon={faEnvelope} />
-            <h3>Email</h3>
-            <h4>Send us a message</h4>
-            <a href="mailto:admin@inscope.ai" rel="noreferrer" target="_blank">
-              admin@inscope.ai
-            </a>
-          </div>
-          <div className={styles.socialMedia}>
-            <FontAwesomeIcon icon={faThumbsUp} />
-            <h3>Social Media</h3>
-            <h4>Follow us to learn more</h4>
-            <a href="https://www.linkedin.com/company/inscope-ai/" rel="noreferrer" target="_blank">
-              <LinkedInColorSVG />
-            </a>
-          </div>
+        {contactContent.contactTypes.map((type, index) => {
+          return (
+            <div key={index}>
+              <FontAwesomeIcon icon={type.icon} />
+              <h3>{type.type}</h3>
+              <h4>{type.info}</h4>
+              <a href={type.link} rel="noreferrer" target="_blank">
+                {(typeof type.button) === "string" ? type.button : React.createElement(type.button)}
+              </a>
+            </div>
+          )
+        })}
         </div>
       </section>
   </Layout>
