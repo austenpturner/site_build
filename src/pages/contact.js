@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,17 +22,17 @@ const Contact = () => (
             <FontAwesomeIcon icon={faEnvelope} />
             <h3>Email</h3>
             <p>Send us a message</p>
-            <Link href="mailto:admin@inscope.ai" target="_blank">
+            <a href="mailto:admin@inscope.ai" rel="noreferrer" target="_blank">
               admin@inscope.ai
-            </Link>
+            </a>
           </div>
           <div className={styles.socialMedia}>
             <FontAwesomeIcon icon={faThumbsUp} />
             <h3>Social Media</h3>
             <p>Follow us to learn more</p>
-            <Link to="https://www.linkedin.com/company/inscope-ai/" target="_blank">
+            <a href="https://www.linkedin.com/company/inscope-ai/" rel="noreferrer" target="_blank">
               <LinkedInColorSVG />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

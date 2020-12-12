@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import styles from "./thumbnail.module.scss";
 
 const Thumbnail = ({ imgComponent, name, titles, socialLinks }) => {
@@ -15,9 +14,9 @@ const Thumbnail = ({ imgComponent, name, titles, socialLinks }) => {
         <div className={styles.socialIcons}>
             {socialLinks.map(({imgComponent, link}, index) => {
                 return (
-                    <Link key={index} className={styles.iconContainer} target="_blank" to={link}>
+                    <a key={index} className={styles.iconContainer} target="_blank" rel="noreferrer" href={link}>
                         {React.createElement(imgComponent)}
-                    </Link>
+                    </a>
                 )
             })}
         </div>

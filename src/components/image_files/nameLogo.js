@@ -18,7 +18,7 @@ const NameLogo = () => {
     return <div>Picture not found</div>
   };
 
-  return <img src={data.file.childImageSharp.fluid.src} aria-hidden={true}/>
+  return <img src={data.file.childImageSharp.fluid.src} alt="Inscope logo"/>
 };
 
 export default NameLogo;

@@ -1,7 +1,7 @@
 @import "../../styles/config.scss";
 
 .thumbnail {
-    @include flex (column, start);
+    @include flex (column, flex-start);
     margin: 20px 0;
     img {
         margin: 0 auto 12px;
