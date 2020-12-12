@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "gatsby";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import Banner from "../components/banner/Banner";
-// import Block from "../components/blocks/Blocks";
 import Thumbnail from "../components/thumbnail/thumbnail";
 import aboutContent from "../content/about";
 import styles from "../components/layout/layout.module.scss";
@@ -10,22 +10,22 @@ import styles from "../components/layout/layout.module.scss";
 const About = () => (
   <Layout>
     <SEO title="About" />
+    <section className={styles.aboutSection}>
+      <h1>{aboutContent.bannerContent.heading}</h1>
+      <h2>{aboutContent.bannerContent.subheading}</h2>
+      <p>{aboutContent.bannerContent.info}</p>
+      <div className={styles.btnContainer}>
+        {aboutContent.bannerLinks.map(({ to, title }) => {
+          return (
+            <Link key={title} className={styles.linkBtn} to={to}>{title}</Link>
+          )
+        })}
+      </div>
+    </section> 
     <Banner 
-      heading={aboutContent.bannerContent.heading} 
-      subHeading={aboutContent.bannerContent.subheading} 
-      info={aboutContent.bannerContent.info}  
-      links={aboutContent.bannerLinks} 
       list={aboutContent.listInfo}
-      className={styles.aboutBanner}
     />
-    {/* {aboutContent.sectionContent.map((props, index) => {
-      return (
-        <Block key={index} {...props} >
-          <p>{aboutContent.sectionContent[index].content}</p>
-        </Block>
-      )
-    })} */}
-    <div className={styles.teamSection}>
+    <section className={styles.teamSection}>
       <h1>{aboutContent.teamContent.header}</h1>
       <div className={styles.teamContainer}>
         {aboutContent.teamContent.teamMemebers.map((props, index) => {
@@ -34,7 +34,7 @@ const About = () => (
           )
         })}
       </div>
-    </div>
+    </section>
   </Layout>
 )
 

@@ -1,77 +1,10 @@
 @import "../../styles/config.scss";
 
 .banner {
-    .titleContainer {
-        @include flex (column, space-around);
-        margin: 0 auto;
-        min-height: calc(100vh - 90px);
-        padding-top: $headerHeightMobile;
-        width: 90%;
-        div {
-            h1, h2, p {
-                margin: 0 auto;
-                text-align: center;
-            }
-            h1, h2 {
-                font-size: 2.1rem;
-            }
-            h1 {
-                color: $inscopeBlue;
-            }
-            p {
-                color: $mediumGrey;
-                font-size: 0.9rem;
-                line-height: 1.3rem;
-                margin: 12px 0;
-            }
-            .btnContainer {
-                @include flex (row, center);
-                margin: 0 auto;
-                .linkBtn {
-                    border: 2px solid rgba(0,0,0,0);
-                    border-radius: 6px;
-                    cursor: pointer;
-                    text-align: center;
-                    text-decoration: none;
-                    min-width: 140px;
-                }
-                a {
-                    align-self: center;
-                    color: white;
-                    font-size: 0.9rem;
-                    line-height: 2.4rem;
-                    margin: 8px 5px;
-                }
-                :first-child {
-                    background: $salmonBerry;
-                    transition: all 200ms ease-in-out;
-                    &:hover {
-                        box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
-                        background: rgb(221, 66, 58);
-                    }
-                }
-                :last-child {
-                    background: $mediumGrey;
-                    transition: all 200ms ease-in-out;
-                    &:hover {
-                        box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
-                        background: rgb(133, 133, 133);
-                    }
-                }
-            }
-        }
-        .img {
-            margin: 12px 0;
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-    }
     ul {
         @include flex (column, space-around);
         background: $inscopeBlue;
-        height: $bannerUlHeightMobile;
+        height: $bannerHeightMobile;
         margin: 0 auto;
         padding-top: 35px;
         li {
@@ -90,46 +23,21 @@
     }
 }
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
     .banner {
-        .titleContainer {
-            @include flex (column, center);
-            min-height: calc(100vh - 200px);
-            div {
-                h1, h2 {
-                    font-size: 2.4rem;
-                }
-                p {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                    margin: 12px auto;
-                    width: 80%;
-                }
-                .btnContainer {
-                    margin: 1.6rem auto;
-                    max-width: 80%;
-                    a {
-                        font-size: 1rem;
-                        height: 3rem;
-                        line-height: 2.8rem;
-                        margin: 0 6px;
-                    }
-                }
-            }
-        }
         ul {
             @include flex (row, center);
-            height: $bannerUlHeight;
+            height: $bannerHeightTablet;
             padding-top: 0;
             li {
                 @include flex (column, center);
                 font-size: 1.1rem;
                 max-width: 400px;
-                padding: 100px 0;
+                padding: 80px 0;
                 text-align: center;
                 width: 33.3%;
                 :first-child {
-                    font-size: 3rem;
+                    font-size: 2.6rem;
                     margin: 0 auto 15px;
                 }
             }
@@ -139,53 +47,7 @@
 
 @media (max-height: 414px) and (orientation: landscape) {
     .banner {
-        padding-top: 70px;
-        .titleContainer {
-            @include flex (row, space-between);
-            margin: 0 auto 10px;
-            max-width: 1200px;
-            min-height: calc(100vh - 150px);
-            padding-top: 0;
-            position: relative;
-            width: 87%;
-            div {
-                align-self: center;
-                margin-bottom: 0px;
-                width: 110%;
-                h1, h2 {
-                    font-size: 1.6rem;
-                    margin: 0;
-                    text-align: left;
-                    width: 100%;
-                }
-                p {
-                    font-size: 0.8rem;
-                    line-height: 1.3rem;
-                    margin: 8px 0;
-                    text-align: left;
-                    width: 100%;
-                }
-                .btnContainer {
-                    @include flex (row, flex-start);
-                    margin: 0;
-                    .linkBtn {
-                        min-width: 120px;
-                    }
-                    a {
-                        font-size: 0.8rem;
-                        height: 2.5rem;
-                        line-height: 2.2rem;
-                        margin: 6px 15px 0 0;
-                    }
-                }
-            }
-            .img img {
-                position: absolute;
-                right: 0px;
-                top: -80px;
-                width: 270px;
-            }
-        }
+        // padding-top: 70px;
         ul {
             @include flex (row, center);
             height: 70px;
@@ -204,100 +66,10 @@
     }
 }
 
-@media (min-width: 769px) and (min-height: 415px) {
-    .banner {
-        .titleContainer {
-            @include flex (row, center);
-            margin: 0 auto;
-            max-width: 800px;
-            min-height: calc(100vh - 200px);
-            position: relative;
-            width: 90%;
-            div {
-                align-self: center;
-                margin-bottom: 0px;
-                width: 80%;
-                h1, h2 {
-                    font-size: 2.6rem;
-                    margin: 0;
-                    text-align: left;
-                    width: 60%;
-                }
-                p {
-                    font-size: 1.05rem;
-                    line-height: 1.8rem;
-                    margin: 12px 0;
-                    text-align: left;
-                    width: 100%;
-                }
-                .btnContainer {
-                    @include flex (row, flex-start);
-                    margin: 0;
-                    .linkBtn {
-                        min-width: 140px;
-                    }
-                    a {
-                        font-size: 0.95rem;
-                        height: 2.7rem;
-                        line-height: 2.4rem;
-                        margin: 8px 20px 0 0;
-                    }
-                }
-            }
-            .img {
-                img {
-                    position: absolute;
-                    right: 0px;
-                    top: -130px;
-                    width: 400px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 900px) {
-    .banner {
-        .titleContainer {
-            div {
-                h1, h2, p {
-                    width: 100%;
-                }
-            }
-            .img img {
-                width: 480px;
-            }
-        }
-    }
-}
-
 @media (min-width: 1024px) {
     .banner {
-        .titleContainer {
-            max-width: 1200px;
-            width: 80%;
-            div {
-                width: 100%;
-                h1, h2 {
-                    font-size: 2.2rem;
-                }
-                p {
-                    font-size: 1rem;
-                    margin: 20px 0 10px;
-                    width: 90%;
-                }
-                .btnContainer a {
-                    margin: 20px 20px 0 0;
-                }
-            }
-            .img {
-                img {
-                    top: -120px;
-                    width: 460px;
-                }
-            }
-        }
         ul {
+            height: $bannerHeightLarge;
             li {
                 font-size: 1.2rem;
                 margin: 0;
@@ -312,19 +84,6 @@
 
 @media (min-width: 1280px) {
     .banner {
-        .titleContainer {
-            div {
-                width: 100%;
-                h1, h2 {
-                    font-size: 2.6rem;
-                    width: 100%;
-                }
-            }
-            .img img {
-                top: -160px;
-                width: 580px;
-            }
-        }
         ul {
             li {
                 font-size: 1.4rem;

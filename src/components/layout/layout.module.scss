@@ -14,6 +14,65 @@
   margin: 20px auto 50px;
 }
 
+.aboutSection {
+  @include flex (column, center);
+  margin: 0 auto;
+  min-height: calc(100vh - 90px);
+  padding-top: $headerHeightMobile;
+  width: 90%;
+  h1, h2, p {
+      margin: 0 auto;
+      text-align: center;
+  }
+  h1, h2 {
+      font-size: 2.1rem;
+  }
+  h1 {
+      color: $inscopeBlue;
+  }
+  p {
+      color: $mediumGrey;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      margin: 12px 0;
+  }
+  .btnContainer {
+    @include flex (row, center);
+    margin: 0 auto;
+    .linkBtn {
+        border: 2px solid rgba(0,0,0,0);
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        min-width: 140px;
+    }
+    a {
+        align-self: center;
+        color: white;
+        font-size: 0.9rem;
+        line-height: 2.4rem;
+        margin: 8px 5px;
+    }
+    :first-child {
+      background: $salmonBerry;
+      transition: all 200ms ease-in-out;
+      &:hover {
+          box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+          background: rgb(221, 66, 58);
+      }
+    }
+    :last-child {
+      background: $mediumGrey;
+      transition: all 200ms ease-in-out;
+      &:hover {
+          box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+          background: rgb(133, 133, 133);
+      }
+    }
+  }
+}
+
 .teamSection {
   margin: 30px auto 40px;
   h1, .teamContainer {
@@ -33,7 +92,7 @@
   }
 }
 
-.contactBanner {
+.contactSection {
   padding-top: 80px;
   margin: 0 auto;
   min-height: calc(100vh - 200px);
@@ -91,7 +150,7 @@
     }
   }
 
-  .contactBanner {
+  .contactSection {
     padding-top: 70px;
     .headerContainer {
       margin-top: 0;
@@ -116,6 +175,38 @@
     margin: 50px auto;
   }
 
+  .aboutSection {
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: calc(100vh - 200px);
+    position: relative;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 0px;
+    width: 80%;
+    h1, h2 {
+        font-size: 2.6rem;
+    }
+    p {
+        font-size: 1.05rem;
+        line-height: 1.8rem;
+        width: 100%;
+    }
+    .btnContainer {
+      @include flex (row, center);
+      margin: 0;
+      .linkBtn {
+        min-width: 140px;
+      }
+      a {
+        font-size: 0.95rem;
+        height: 2.7rem;
+        line-height: 2.4rem;
+        margin: 8px 20px 0 0;
+      }
+    }
+  }
+
   .teamSection {
     margin: 50px auto;
     width: 100%;
@@ -128,7 +219,7 @@
     }
   }
 
-  .contactBanner {
+  .contactSection {
     min-height: calc(100vh - 240px);
     .headerContainer {
       @include flex (column, center);
@@ -147,6 +238,23 @@
 }
 
 @media (min-width: 1024px) {
+  .aboutSection {
+    max-width: 1200px;
+    width: 80%;
+    h1, h2 {
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 20px auto 10px;
+      max-width: 600px;
+      width: 80%;
+    }
+    .btnContainer a {
+      margin: 20px 20px 0 0;
+    }
+  }
+
   .teamSection {
     h1, .teamContainer {
       max-width: 1200px;

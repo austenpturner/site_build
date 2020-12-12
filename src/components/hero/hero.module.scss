@@ -1,0 +1,180 @@
+@import "../../styles/config.scss";
+
+.hero {
+    @include flex (column, space-evenly);
+    margin: 0 auto;
+    min-height: calc(100vh - 90px);
+    padding-top: $headerHeightMobile;
+    width: 90%;
+    .titleContainer {
+        h1, h2, p {
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            color: $inscopeBlue;
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        p {
+            color: $mediumGrey;
+            font-size: 0.9rem;
+            line-height: 1.4rem;
+            margin: 12px auto 16px;
+            max-width: 500px;
+        }
+        .btnContainer {
+            @include flex (row, center);
+            margin: 0 auto;
+            a .linkBtn {
+                border: 2px solid rgba(0,0,0,0);
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-size: 0.9rem;
+                line-height: 2.4rem;
+                margin: 8px 5px;
+                text-align: center;
+                width: 140px; 
+                &:focus, &:active {
+                    outline: none;
+                }
+            }
+            :first-child .linkBtn {
+                background: $salmonBerry;
+                transition: all 200ms ease-in-out;
+                &:hover {
+                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                    background: rgb(221, 66, 58);
+                }
+            }
+            :last-child .linkBtn {
+                background: $mediumGrey;
+                transition: all 200ms ease-in-out;
+                &:hover {
+                    box-shadow: -1px 1px 6px rgba(0,0,0,0.6);
+                    background: rgb(133, 133, 133);
+                }
+            }
+        }
+    }
+    .img {
+        margin: 12px auto;
+        img {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        @include flex (column, space-evenly);
+        min-height: calc(100vh - 160px);
+        .titleContainer {
+            h1 {
+                font-size: 2.3rem;
+            }
+            h2 {
+                font-size: 2.1rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.8rem;
+                margin: 18px auto;
+            }
+        }
+    }
+}
+
+@media (max-height: 480px) {
+    .hero {
+        @include flex (row, space-between);
+        max-width: 1200px;
+        min-height: calc(100vh - 70px);
+        padding: $headerHeight 10px 0 10px;
+        .titleContainer {
+            align-self: center;
+            h1, h2, p {
+                text-align: left;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
+                margin: 8px 0;
+            }
+            .btnContainer {
+                @include flex (row, flex-start);
+                a .linkBtn {
+                    font-size: 0.8rem;
+                    line-height: 2.2rem;
+                    margin: 8px 10px 8px 0;
+                }
+            }
+        }
+        .img img {
+            max-width: 400px;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 481px) {
+    .hero {
+        @include flex (row, space-between);
+        max-width: 1200px;
+        min-height: calc(100vh - 200px);
+        padding-top: $headerHeight;
+        width: 80%;
+        .titleContainer {
+            align-self: center;
+            h1, h2, p {
+                text-align: left;
+            }
+            h1 {
+                font-size: 2.6rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+                width: 110%;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.8rem;
+                margin: 12px 0;
+                width: 95%;
+            }
+            .btnContainer {
+                @include flex (row, flex-start);
+                a .linkBtn {
+                    margin: 8px 20px 8px 0;
+                }
+            }
+        }
+        .img {
+            align-self: center;
+            margin: 0px;
+            img {
+                max-width: 480px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero {
+        .titleContainer p {
+            width: 100%;
+        }
+        .img img {
+            max-width: 560px;
+        }
+    }
+}

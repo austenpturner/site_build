@@ -11,7 +11,7 @@ import styles from "../components/layout/layout.module.scss";
 const Contact = () => (
   <Layout>
     <SEO title="About" />
-      <div className={styles.contactBanner}>
+      <section className={styles.contactSection}>
         <div className={styles.headerContainer}>
           <h1>Get In Touch</h1>
           <h2>Let's Connect!</h2>
@@ -35,7 +35,7 @@ const Contact = () => (
             </a>
           </div>
         </div>
-      </div>
+      </section>
   </Layout>
 )
 

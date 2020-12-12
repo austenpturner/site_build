@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import Hero from "../components/hero/Hero";
 import Banner from "../components/banner/Banner";
 import Block from "../components/blocks/Blocks";
 import indexContent from "../content/index";
@@ -11,14 +12,17 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <Banner 
+      <Hero 
         heading={indexContent.bannerContent.heading} 
         subHeading={indexContent.bannerContent.subheading} 
         info={indexContent.bannerContent.info} 
         links={indexContent.bannerLinks} 
-        list={indexContent.listInfo}
       >
         <ProductImg/>
+      </Hero>
+      <Banner
+        list={indexContent.listInfo}
+      >
       </Banner>
       <section className={styles.gridContainer}>
         {indexContent.sectionContent.map((props, index) => (
