@@ -2,9 +2,9 @@ import { Link } from "gatsby";
 import React, { useState, useEffect } from "react";
 import navItems from "../../content/nav";
 import NameLogo from "../image_files/nameLogo";
-import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./header.module.scss";
+import styles, {toggle1, toggle2, toggle3, burgerLine, slideUp, slideDown} from "./nav.module.scss";
 
-function Header() {
+function Nav() {
   const [navOpen, setNavOpen] = useState(false);
 
   // debounce function & mark scroll event at passive 
@@ -77,4 +77,4 @@ function Header() {
   )
 };
 
-export default Header;
+export default Nav;

@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Header from "../header/Header";
+import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 import "./layout";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header/>
+      <Nav/>
       <div>
         <main>{children}</main>
         <Footer />
