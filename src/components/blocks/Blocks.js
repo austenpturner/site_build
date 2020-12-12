@@ -13,7 +13,7 @@ const Section = ({ imgComponent, heading, children, links }) => {
         </Fade>
         <Fade>
             <div className={styles.contentContainer}>
-                <h4>{heading}</h4>
+                <h3>{heading}</h3>
                 {children}
                 {links.map(({ to, title }) => {
                 return (

@@ -26,7 +26,7 @@ const About = () => (
       list={aboutContent.listInfo}
     />
     <section className={styles.teamSection}>
-      <h1>{aboutContent.teamContent.header}</h1>
+      <h2>{aboutContent.teamContent.header}</h2>
       <div className={styles.teamContainer}>
         {aboutContent.teamContent.teamMemebers.map((props, index) => {
           return (

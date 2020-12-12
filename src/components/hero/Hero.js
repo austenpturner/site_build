@@ -4,7 +4,7 @@ import styles from "./hero.module.scss";
 
 const Hero = ({ heading, subHeading, info, children, links }) => {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
         <div className={styles.titleContainer}>
           <h1>{heading}</h1>
           <h2>{subHeading}</h2>
@@ -20,7 +20,7 @@ const Hero = ({ heading, subHeading, info, children, links }) => {
           </div>
         </div>
         <div className={styles.img}>{children}</div>
-    </div>
+    </section>
   )
 };
 

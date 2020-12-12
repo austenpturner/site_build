@@ -8,6 +8,7 @@
         width: 150px;
     }
     h3 {
+        font-size: 1.05rem;
         margin: 1px auto;
     }
     h4 {
@@ -35,7 +36,7 @@
     .thumbnail {
         margin-right: 6.25%;
         width: 25%;
-        img, h4 {
+        img, h5 {
             width: 170px;
         }
         &:nth-child(3n+5), &:nth-child(2n+2) {

@@ -27,7 +27,7 @@ const IndexPage = () => {
       <section className={styles.gridContainer}>
         {indexContent.sectionContent.map((props, index) => (
             <Block key={props.heading} {...props}>
-              <p>{indexContent.sectionContent[index].content}</p>
+              <h4>{indexContent.sectionContent[index].content}</h4>
             </Block>
           )
         )}

@@ -5,7 +5,6 @@
     margin: 0 auto;
     min-height: calc(100vh - 90px);
     padding-top: $headerHeightMobile;
-    width: 90%;
     .titleContainer {
         h1, h2, p {
             margin: 0 auto;
@@ -69,26 +68,6 @@
     }
 }
 
-@media (min-width: 768px) {
-    .hero {
-        @include flex (column, space-evenly);
-        min-height: calc(100vh - 160px);
-        .titleContainer {
-            h1 {
-                font-size: 2.3rem;
-            }
-            h2 {
-                font-size: 2.1rem;
-            }
-            p {
-                font-size: 1rem;
-                line-height: 1.8rem;
-                margin: 18px auto;
-            }
-        }
-    }
-}
-
 @media (max-height: 480px) {
     .hero {
         @include flex (row, space-between);
@@ -126,7 +105,29 @@
     }
 }
 
-@media (min-width: 1024px) and (min-height: 481px) {
+@media (min-width: 768px) and (min-height: 481px) {
+    .hero {
+        @include flex (column, space-evenly);
+        min-height: calc(100vh - 160px);
+        .titleContainer {
+            h1 {
+                font-size: 2.3rem;
+            }
+            h2 {
+                font-size: 2.1rem;
+            }
+            p {
+                font-size: 1.05rem;
+                line-height: 1.8rem;
+                margin: 18px auto;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 1024px) {
     .hero {
         @include flex (row, space-between);
         max-width: 1200px;
@@ -146,8 +147,6 @@
                 width: 110%;
             }
             p {
-                font-size: 1rem;
-                line-height: 1.8rem;
                 margin: 12px 0;
                 width: 95%;
             }

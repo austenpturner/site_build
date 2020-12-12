@@ -21,7 +21,7 @@ const Contact = () => (
           <div className={styles.email}>
             <FontAwesomeIcon icon={faEnvelope} />
             <h3>Email</h3>
-            <p>Send us a message</p>
+            <h4>Send us a message</h4>
             <a href="mailto:admin@inscope.ai" rel="noreferrer" target="_blank">
               admin@inscope.ai
             </a>
@@ -29,7 +29,7 @@ const Contact = () => (
           <div className={styles.socialMedia}>
             <FontAwesomeIcon icon={faThumbsUp} />
             <h3>Social Media</h3>
-            <p>Follow us to learn more</p>
+            <h4>Follow us to learn more</h4>
             <a href="https://www.linkedin.com/company/inscope-ai/" rel="noreferrer" target="_blank">
               <LinkedInColorSVG />
             </a>

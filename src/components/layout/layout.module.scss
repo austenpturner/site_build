@@ -1,6 +1,31 @@
 @import "../../styles/settings.scss";
 
 // ----- ELEMENT STYLES ----- //
+h1 {
+  color: $inscopeBlue;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  color: $mediumGrey;
+  font-size: 1rem;
+}
+p {
+  color: $mediumGrey;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+section {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 90%;
+}
+
 .linkBtn {
     border: 2px solid rgba(0,0,0,0);
     border-radius: 6px;
@@ -16,24 +41,13 @@
 
 .aboutSection {
   @include flex (column, center);
-  margin: 0 auto;
   min-height: calc(100vh - 90px);
   padding-top: $headerHeightMobile;
-  width: 90%;
   h1, h2, p {
       margin: 0 auto;
       text-align: center;
   }
-  h1, h2 {
-      font-size: 2.1rem;
-  }
-  h1 {
-      color: $inscopeBlue;
-  }
   p {
-      color: $mediumGrey;
-      font-size: 0.9rem;
-      line-height: 1.3rem;
       margin: 12px 0;
   }
   .btnContainer {
@@ -75,13 +89,8 @@
 
 .teamSection {
   margin: 30px auto 40px;
-  h1, .teamContainer {
-    max-width: 800px;
-    width: 90%;
-  }
-  h1 {
+  h2 {
     color: $inscopeBlue;
-    font-size: 2rem;
     margin: 0 auto 10px;
     text-align: center;
   }
@@ -94,15 +103,20 @@
 
 .contactSection {
   padding-top: 80px;
-  margin: 0 auto;
   min-height: calc(100vh - 200px);
-  width: 80%;
   .headerContainer {
     h1, h2, p {
       margin: 5px auto;
       text-align: center;
     }
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
     p {
+      font-size: 1rem;
       max-width: 400px;
     }
   }
@@ -111,8 +125,7 @@
     align-items: center;
     margin: 15px auto;
     div {
-      @include flex(column, space-evenly);
-      background: $accentWhite;
+      @include flex(column, flex-start);
       border-radius: 5px;
       box-shadow: -3px 3px 8px rgba($mediumGrey,0.8);
       margin: 15px auto;
@@ -125,10 +138,12 @@
         margin: 5px auto;
       }
       h3 {
+        font-size: 1.1rem;
         margin: 5px auto;
         font-weight: normal;
       }
-      p {
+      h4 {
+        font-weight: normal;
         margin: 5px auto;
         width: 100%;
       }
@@ -140,10 +155,40 @@
       }
     }
   }
-  
 }
 
+// ----- MEDIA QUERIES ----- //
 @media (max-height: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .aboutSection {
+    min-height: calc(100vh - 70px);
+    padding: $headerHeightMobile 10px 0 10px;
+    p {
+      margin: 8px auto;
+      width: 80%;
+    }
+  }
+
   .teamSection {
     .teamContainer {
       justify-content: space-between;
@@ -171,26 +216,34 @@
 }
 
 @media (min-width: 768px) and (min-height: 481px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.05rem;
+  }
+  p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+  }
   .gridContainer {
     margin: 50px auto;
   }
 
   .aboutSection {
-    margin: 0 auto;
-    max-width: 800px;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 160px);
     position: relative;
-    width: 90%;
     align-self: center;
     margin-bottom: 0px;
-    width: 80%;
-    h1, h2 {
-        font-size: 2.6rem;
-    }
     p {
-        font-size: 1.05rem;
-        line-height: 1.8rem;
-        width: 100%;
+        margin: 20px auto;
+        width: 80%;
     }
     .btnContainer {
       @include flex (row, center);
@@ -209,9 +262,7 @@
 
   .teamSection {
     margin: 50px auto;
-    width: 100%;
-    h1 {
-      font-size: 2.2rem;
+    h2 {
       margin: 20px auto 30px;
     }
     .teamContainer {
@@ -232,33 +283,50 @@
       div {
         height: 220px;
         width: 240px;
+        :first-child, h3 {
+          margin: 10px auto;
+        }
+        h4 {
+          margin: 8px auto;
+        }
+        a {
+          color: $inscopeBlue;
+          line-height: 3rem;
+        }
+        a img {
+          padding-top: 5px;
+          width: 30px;
+        }
       }
     }
   }
 }
 
 @media (min-width: 1024px) {
-  .aboutSection {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  section {
     max-width: 1200px;
     width: 80%;
-    h1, h2 {
-      font-size: 2.2rem;
-    }
+  }
+
+  .aboutSection {
+    min-height: calc(100vh - 200px);
+    padding-top: $headerHeight;
     p {
-      font-size: 1rem;
       margin: 20px auto 10px;
       max-width: 600px;
       width: 80%;
     }
     .btnContainer a {
       margin: 20px 20px 0 0;
-    }
-  }
-
-  .teamSection {
-    h1, .teamContainer {
-      max-width: 1200px;
-      width: 80%;
     }
   }
 }

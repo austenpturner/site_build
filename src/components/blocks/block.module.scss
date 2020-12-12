@@ -1,9 +1,8 @@
 @import "../../styles/config.scss";
 
 .block {
-    margin: 20px;
+    margin: 20px auto;
     max-width: 800px;
-    width: 90%;
     .imgContainer {
         height: 90vw;
         margin: 0px auto;
@@ -12,19 +11,18 @@
         overflow: hidden;
         width: 90vw;
         img {
-            max-height: 90vw;
+            height: 90vw;
         }
     }
     .contentContainer {
         @include flex (column, center);
-        h4 {
-            font-size: 1.8rem;
+        h3 {
             margin: 20px auto 10px;
             text-align: center;
         }
-        p {
-            color: $mediumGrey;
-            line-height: 22px;
+        h4 {
+            font-weight: normal;
+            line-height: 1.6rem;
             margin: 10px auto;
             max-width: 400px;
             text-align: center;
@@ -65,10 +63,10 @@
             @include flex (column, center);
             height: 400px;
             width: 400px;
-            h4 {
+            h3 {
                 width: 60%;
             }
-            p {
+            h4 {
                 margin: 20px auto;
                 width: 85%;
             }
