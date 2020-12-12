@@ -18,7 +18,7 @@ const IndexPage = () => {
         links={indexContent.bannerLinks} 
         list={indexContent.listInfo}
       >
-      <ProductImg/>
+        <ProductImg/>
       </Banner>
       <section className={styles.gridContainer}>
         {indexContent.sectionContent.map((props, index) => (

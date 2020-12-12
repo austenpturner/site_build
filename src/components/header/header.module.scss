@@ -12,7 +12,7 @@
         font-family: lato, sans-serif;
         height: $headerHeightMobile;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 800px;
         padding: 20px 10px;
         width: 90%;
         z-index: 2;
@@ -131,9 +131,7 @@ html:not([data-scroll="0"]) {
         @include flex(row, center);
         header {
             height: $headerHeight;
-            max-width: 800px;
             padding: 0;
-            width: 90%;
             h1 a {
                 font-size: 1.8rem;
                 img {

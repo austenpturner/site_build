@@ -15,7 +15,8 @@ const About = () => (
       subHeading={aboutContent.bannerContent.subheading} 
       info={aboutContent.bannerContent.info}  
       links={aboutContent.bannerLinks} 
-      list={aboutContent.listInfo} 
+      list={aboutContent.listInfo}
+      className={styles.aboutBanner}
     />
     {/* {aboutContent.sectionContent.map((props, index) => {
       return (

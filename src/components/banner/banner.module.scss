@@ -6,7 +6,7 @@
         margin: 0 auto;
         min-height: calc(100vh - 90px);
         padding-top: $headerHeightMobile;
-        width: 80%;
+        width: 90%;
         div {
             h1, h2, p {
                 margin: 0 auto;
@@ -206,11 +206,10 @@
 
 @media (min-width: 769px) and (min-height: 415px) {
     .banner {
-        // margin-bottom: 80px;
         .titleContainer {
-            @include flex (row, space-between);
+            @include flex (row, center);
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 800px;
             min-height: calc(100vh - 200px);
             position: relative;
             width: 90%;
@@ -222,7 +221,7 @@
                     font-size: 2.6rem;
                     margin: 0;
                     text-align: left;
-                    width: 80%;
+                    width: 60%;
                 }
                 p {
                     font-size: 1.05rem;
@@ -245,11 +244,13 @@
                     }
                 }
             }
-            .img img {
-                position: absolute;
-                right: 0px;
-                top: -130px;
-                width: 400px;
+            .img {
+                img {
+                    position: absolute;
+                    right: 0px;
+                    top: -130px;
+                    width: 400px;
+                }
             }
         }
     }
@@ -273,6 +274,7 @@
 @media (min-width: 1024px) {
     .banner {
         .titleContainer {
+            max-width: 1200px;
             width: 80%;
             div {
                 width: 100%;
@@ -288,9 +290,11 @@
                     margin: 20px 20px 0 0;
                 }
             }
-            .img img {
-                top: -120px;
-                width: 460px;
+            .img {
+                img {
+                    top: -120px;
+                    width: 460px;
+                }
             }
         }
         ul {
@@ -313,7 +317,7 @@
                 width: 100%;
                 h1, h2 {
                     font-size: 2.6rem;
-                    width: 120%;
+                    width: 100%;
                 }
             }
             .img img {
