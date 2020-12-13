@@ -5,20 +5,16 @@ const FacebookSVG = () => {
   	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "facebook.svg" }) {
-				childImageSharp {
-					fluid {
-					  src
-					}
-				}
+				publicURL
 			}
 		}
 	`)
 
-  	if (!data?.file?.childImageSharp?.fluid) {
+  	if (!data?.file?.publicURL) {
     	return <div>Picture not found</div>
   	};
 
-  	return <img src={data.file.childImageSharp.fluid.src} alt="Facebook"/>
+  	return <img src={data.file.publicURL} alt="Facebook"/>
 };
 
 export default FacebookSVG;
