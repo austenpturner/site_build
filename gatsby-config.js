@@ -28,6 +28,13 @@ module.exports = {
         icon: `src/images/inscope-logo.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `cvosbc8e5tnu`,
+        accessToken: `4UNMTahpYVgTO6H5MdeEtAw0TvyOaFrqtf_W1d1atY8`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

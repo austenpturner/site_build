@@ -11,7 +11,7 @@ const Banner = ({ list }) => {
           return (
             <li key={index}>
               <FontAwesomeIcon icon={faCheckCircle} />
-              {item.content}
+              {item}
             </li>
           )
         })}

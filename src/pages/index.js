@@ -13,9 +13,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Hero 
-        heading={indexContent.bannerContent.heading} 
-        subHeading={indexContent.bannerContent.subheading} 
-        info={indexContent.bannerContent.info} 
+        heading={indexContent.heading} 
+        subHeading={indexContent.subheading} 
+        info={indexContent.info} 
         links={indexContent.bannerLinks} 
       >
         <ProductImg/>

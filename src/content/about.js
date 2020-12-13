@@ -10,11 +10,9 @@ import XavierKingImage from "../components/image_files/xavierKing";
 import AustenTurnerImage from "../components/image_files/austenTurner";
 
 const aboutContent = {
-    bannerContent: {
-        heading: "Deeply Commited",
-        subheading: "We Are Driven By Values",
-        info: "Inscope is an intelligent video messaging platform designed by sales people, for sales people. Inscope gives you the tools you need to create engaging content to send to prospects, customers and clients, as well as the artificial intelligence to help you strategize how to best use it. Inscope helps you humanize every aspect of your sales cycle, helping you work more efficiently and ideally close more business.",
-    },
+    heading: "Deeply Commited",
+    subheading: "We Are Driven By Values",
+    info: "Inscope is an intelligent video messaging platform designed by sales people, for sales people. Inscope gives you the tools you need to create engaging content to send to prospects, customers and clients, as well as the artificial intelligence to help you strategize how to best use it. Inscope helps you humanize every aspect of your sales cycle, helping you work more efficiently and ideally close more business.",
     bannerLinks: [
         {
             "to": "/",

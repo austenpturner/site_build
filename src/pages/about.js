@@ -11,9 +11,9 @@ const About = () => (
   <Layout>
     <SEO title="About" />
     <section className={styles.aboutSection}>
-      <h1>{aboutContent.bannerContent.heading}</h1>
-      <h2>{aboutContent.bannerContent.subheading}</h2>
-      <p>{aboutContent.bannerContent.info}</p>
+      <h1>{aboutContent.heading}</h1>
+      <h2>{aboutContent.subheading}</h2>
+      <p>{aboutContent.info}</p>
       <div className={styles.btnContainer}>
         {aboutContent.bannerLinks.map(({ to, title }) => {
           return (
