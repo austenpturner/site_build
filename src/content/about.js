@@ -24,15 +24,9 @@ const aboutContent = {
         }
     ],
     listInfo: [
-        {
-            content: "Super Efficient"
-        },
-        {
-            content: "Deeply Commited"
-        },
-        {
-            content: "Highly Skilled"
-        },
+        "Super Efficient",
+        "Deeply Commited",
+        "Highly Skilled",
     ],
     sectionContent: [
         {

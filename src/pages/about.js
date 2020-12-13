@@ -15,9 +15,9 @@ const About = () => (
       <h2>{aboutContent.subheading}</h2>
       <p>{aboutContent.info}</p>
       <div className={styles.btnContainer}>
-        {aboutContent.bannerLinks.map(({ to, title }) => {
+        {aboutContent.bannerLinks.map((link, index) => {
           return (
-            <Link key={title} className={styles.linkBtn} to={to}>{title}</Link>
+            <Link key={index} className={styles.linkBtn} to={link.to}>{link.title}</Link>
           )
         })}
       </div>
