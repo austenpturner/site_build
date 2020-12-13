@@ -5,16 +5,20 @@ const LinkedInSVG = () => {
   	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "linkedin.svg" }) {
-				publicURL
+				childImageSharp {
+					fluid {
+					  src
+					}
+				}
 			}
 		}
 	`)
 
-  	if (!data?.file?.publicURL) {
+  	if (!data?.file?.childImageSharp?.fluid) {
     	return <div>Picture not found</div>
   	};
 
-  	return <img src={data.file.publicURL} alt="LinkedIn"/>
+  	return <img src={data.file.childImageSharp?.fluid.src} alt="LinkedIn"/>
 };
 
 export default LinkedInSVG;

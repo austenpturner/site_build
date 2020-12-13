@@ -5,16 +5,20 @@ const MichaelSkinnerImage = () => {
   	const data = useStaticQuery(graphql`
 		query {
 			file(relativePath: { eq: "Michael-Skinner.jpg" }) {
-				publicURL
+				childImageSharp {
+					fluid {
+					  src
+					}
+				}
 			}
 		}
 	`)
 
-  	if (!data?.file?.publicURL) {
+  	if (!data?.file?.childImageSharp?.fluid) {
     	return <div>Picture not found</div>
   	};
 
-  	return <img src={data.file.publicURL} alt="Team Member"/>
+  	return <img src={data.file.childImageSharp?.fluid.src} alt="Team Member"/>
 };
 
 export default MichaelSkinnerImage;
