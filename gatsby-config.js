@@ -1,3 +1,9 @@
+const dotenv = require('dotenv');
+
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+};
+
 module.exports = {
   pathPrefix: `/site_build`,
   siteMetadata: {
@@ -29,13 +35,14 @@ module.exports = {
         icon: `src/images/inscope-logo.png`, // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: `cvosbc8e5tnu`,
-    //     accessToken: `4UNMTahpYVgTO6H5MdeEtAw0TvyOaFrqtf_W1d1atY8`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `fcsr1ulbroi4`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
