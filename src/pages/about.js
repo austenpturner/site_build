@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import SEO from "../components/seo";
 import Layout from "../components/layout/layout";
 import Banner from "../components/banner/Banner";
@@ -7,8 +7,30 @@ import Thumbnail from "../components/thumbnail/thumbnail";
 import aboutContent from "../content/about";
 import styles from "../components/layout/layout.module.scss";
 
-const About = () => (
-  <Layout>
+const About = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulTeamMember {
+        edges {
+          node {
+            name
+            linkedIn
+            title
+            image {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const teamMembers = data.allContentfulTeamMember.edges;
+
+  return (
+    <Layout>
     <SEO title="About" />
     <section className={styles.aboutSection}>
       <h1>{aboutContent.heading}</h1>
@@ -28,7 +50,7 @@ const About = () => (
     <section className={styles.teamSection}>
       <h2>{aboutContent.teamContent.header}</h2>
       <div className={styles.teamContainer}>
-        {aboutContent.teamContent.teamMemebers.map((props, index) => {
+        {teamMembers.map((props, index) => {
           return (
             <Thumbnail key={index} {...props}></Thumbnail>
           )
@@ -36,6 +58,7 @@ const About = () => (
       </div>
     </section>
   </Layout>
-)
+  )
+}
 
 export default About
