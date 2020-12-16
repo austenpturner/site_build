@@ -99,58 +99,58 @@ const aboutContent = {
                     },
                 ],
             },
-            {
-                imgComponent: MollyLongImage,
-                name: "Molly Long",
-                titles: [
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/molly-long/",
-                    },
-                ],
-            },
-            {
-                imgComponent: XavierKingImage,
-                name: "Xavier King",
-                titles: [
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/xavier-king/",
-                    },
-                ],
-            },
-            {
-                imgComponent: DustinJacksonImage,
-                name: "Dustin Jackson",
-                titles: [
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/dustinguyjackson/",
-                    },
-                ],
-            },
-            {
-                imgComponent: AustenTurnerImage,
-                name: "Austen Turner",
-                titles: [
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/austenpturner/",
-                    },
-                ],
-            },
+            // {
+            //     imgComponent: MollyLongImage,
+            //     name: "Molly Long",
+            //     titles: [
+            //         "Memeber of Technical Staff",
+            //     ],
+            //     socialLinks: [
+            //         {
+            //             imgComponent: LinkedInColorSVG,
+            //             link: "https://www.linkedin.com/in/molly-long/",
+            //         },
+            //     ],
+            // },
+            // {
+            //     imgComponent: XavierKingImage,
+            //     name: "Xavier King",
+            //     titles: [
+            //         "Memeber of Technical Staff",
+            //     ],
+            //     socialLinks: [
+            //         {
+            //             imgComponent: LinkedInColorSVG,
+            //             link: "https://www.linkedin.com/in/xavier-king/",
+            //         },
+            //     ],
+            // },
+            // {
+            //     imgComponent: DustinJacksonImage,
+            //     name: "Dustin Jackson",
+            //     titles: [
+            //         "Memeber of Technical Staff",
+            //     ],
+            //     socialLinks: [
+            //         {
+            //             imgComponent: LinkedInColorSVG,
+            //             link: "https://www.linkedin.com/in/dustinguyjackson/",
+            //         },
+            //     ],
+            // },
+            // {
+            //     imgComponent: AustenTurnerImage,
+            //     name: "Austen Turner",
+            //     titles: [
+            //         "Memeber of Technical Staff",
+            //     ],
+            //     socialLinks: [
+            //         {
+            //             imgComponent: LinkedInColorSVG,
+            //             link: "https://www.linkedin.com/in/austenpturner/",
+            //         },
+            //     ],
+            // },
         ],
     },
 };
