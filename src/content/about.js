@@ -57,20 +57,20 @@ const aboutContent = {
     teamContent: {
         header: "Our Team",
         teamMemebers: [
-            {
-                imgComponent: MichaelSkinnerImage,
-                name: "Michael Skinner",
-                titles: [
-                    "Founding Partner", 
-                    "Memeber of Technical Staff",
-                ],
-                socialLinks: [
-                    {
-                        imgComponent: LinkedInColorSVG,
-                        link: "https://www.linkedin.com/in/therightresource/",
-                    },
-                ],
-            },
+            // {
+            //     imgComponent: MichaelSkinnerImage,
+            //     name: "Michael Skinner",
+            //     titles: [
+            //         "Founding Partner", 
+            //         "Memeber of Technical Staff",
+            //     ],
+            //     socialLinks: [
+            //         {
+            //             imgComponent: LinkedInColorSVG,
+            //             link: "https://www.linkedin.com/in/therightresource/",
+            //         },
+            //     ],
+            // },
             {
                 imgComponent: EliotSkinnerImage,
                 name: "Eliot Skinner",
