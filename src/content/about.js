@@ -57,74 +57,74 @@ const aboutContent = {
     teamContent: {
         header: "Our Team",
         teamMemebers: [
-            // {
-            //     imgComponent: MichaelSkinnerImage,
-            //     name: "Michael Skinner",
-            //     titles: [
-            //         "Founding Partner", 
-            //         "Memeber of Technical Staff",
-            //     ],
-            //     socialLinks: [
-            //         {
-            //             imgComponent: LinkedInColorSVG,
-            //             link: "https://www.linkedin.com/in/therightresource/",
-            //         },
-            //     ],
-            // },
-            // {
-            //     imgComponent: EliotSkinnerImage,
-            //     name: "Eliot Skinner",
-            //     titles: [
-            //         "Founding Partner", 
-            //         "Memeber of Technical Staff",
-            //     ],
-            //     socialLinks: [
-            //         {
-            //             imgComponent: LinkedInColorSVG,
-            //             link: "https://www.linkedin.com/in/eskinnermusic/",
-            //         },
-            //     ],
-            // },
-            // {
-            //     imgComponent: BuryHuangImage,
-            //     name: "Bury Huang",
-            //     titles: [
-            //         "Founding Partner", 
-            //         "Memeber of Technical Staff",
-            //     ],
-            //     socialLinks: [
-            //         {
-            //             imgComponent: LinkedInColorSVG,
-            //             link: "https://www.linkedin.com/in/buryhuang411/",
-            //         },
-            //     ],
-            // },
-            // {
-            //     imgComponent: MollyLongImage,
-            //     name: "Molly Long",
-            //     titles: [
-            //         "Memeber of Technical Staff",
-            //     ],
-            //     socialLinks: [
-            //         {
-            //             imgComponent: LinkedInColorSVG,
-            //             link: "https://www.linkedin.com/in/molly-long/",
-            //         },
-            //     ],
-            // },
-            // {
-            //     imgComponent: XavierKingImage,
-            //     name: "Xavier King",
-            //     titles: [
-            //         "Memeber of Technical Staff",
-            //     ],
-            //     socialLinks: [
-            //         {
-            //             imgComponent: LinkedInColorSVG,
-            //             link: "https://www.linkedin.com/in/xavier-king/",
-            //         },
-            //     ],
-            // },
+            {
+                imgComponent: MichaelSkinnerImage,
+                name: "Michael Skinner",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/therightresource/",
+                    },
+                ],
+            },
+            {
+                imgComponent: EliotSkinnerImage,
+                name: "Eliot Skinner",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/eskinnermusic/",
+                    },
+                ],
+            },
+            {
+                imgComponent: BuryHuangImage,
+                name: "Bury Huang",
+                titles: [
+                    "Founding Partner", 
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/buryhuang411/",
+                    },
+                ],
+            },
+            {
+                imgComponent: MollyLongImage,
+                name: "Molly Long",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/molly-long/",
+                    },
+                ],
+            },
+            {
+                imgComponent: XavierKingImage,
+                name: "Xavier King",
+                titles: [
+                    "Memeber of Technical Staff",
+                ],
+                socialLinks: [
+                    {
+                        imgComponent: LinkedInColorSVG,
+                        link: "https://www.linkedin.com/in/xavier-king/",
+                    },
+                ],
+            },
             {
                 imgComponent: DustinJacksonImage,
                 name: "Dustin Jackson",
