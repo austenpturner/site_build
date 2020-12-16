@@ -1,7 +1,7 @@
 {
-  "name": "inscope.ai",
+  "name": "inscope",
   "private": true,
-  "description": "Inscope.ai Website",
+  "description": "Inscope Website",
   "version": "0.1.0",
   "author": "Austen Turner",
   "dependencies": {

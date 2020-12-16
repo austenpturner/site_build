@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = {
   pathPrefix: `/site_build`,
   siteMetadata: {
-    title: `Inscope.ai`,
+    title: `Inscope`,
     description: `Close Faster With Human Centered AI`,
     image: `https://austenpturner.github.io/site_build/static/c7d133c4324bad9166f91ab741db632a/ee604/product-img.png`,
   },

@@ -13,13 +13,6 @@ const Thumbnail = ({node}) => {
                 )
             })}
             <div className={styles.socialIcons}>
-                {/* {socialLinks.map(({imgComponent, link}, index) => {
-                    return (
-                        <a key={index} className={styles.iconContainer} target="_blank" rel="noreferrer" href={link}>
-                            {React.createElement(imgComponent)}
-                        </a>
-                    )
-                })} */}
                 <a className={styles.iconContainer} target="_blank" rel="noreferrer" href={node.linkedIn}>
                     <LinkedInColorSVG />
                 </a>
